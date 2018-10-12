@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER atal_AES
+	OPTION supported_peripherals = (atal_AES);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = atal_AES;
+END DRIVER

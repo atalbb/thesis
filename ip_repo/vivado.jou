@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Sep 29 12:18:21 2018
+# Process ID: 11016
+# Current directory: C:/Xilinx/Vivado/MyProjects/myIps/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11500 C:\Xilinx\Vivado\MyProjects\myIps\ip_repo\edit_atal_AES_v1_0.xpr
+# Log file: C:/Xilinx/Vivado/MyProjects/myIps/ip_repo/vivado.log
+# Journal file: C:/Xilinx/Vivado/MyProjects/myIps/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Vivado/MyProjects/myIps/ip_repo/edit_atal_AES_v1_0.xpr
+update_compile_order -fileset sources_1

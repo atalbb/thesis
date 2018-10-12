@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Sep 29 12:18:21 2018
+# Process ID: 11016
+# Current directory: C:/Xilinx/Vivado/MyProjects/myIps/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11500 C:\Xilinx\Vivado\MyProjects\myIps\ip_repo\edit_atal_AES_v1_0.xpr
+# Log file: C:/Xilinx/Vivado/MyProjects/myIps/ip_repo/vivado.log
+# Journal file: C:/Xilinx/Vivado/MyProjects/myIps/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Vivado/MyProjects/myIps/ip_repo/edit_atal_AES_v1_0.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Xilinx/Vivado/MyProjects/myIps/ip_repo/atal_AES_1.0/src/top.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/MyProjects/myIps/ip_repo/atal_AES_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/MyProjects/myIps/ip_repo/sevenSegment_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/MyProjects/myIps/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 782.699 ; gain = 39.832
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 29 12:29:50 2018...
