@@ -1,0 +1,117 @@
+00:08:55 **** Auto Build of configuration Debug for project app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../app_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:49:10: warning: excess elements in array initializer
+          0x01234567, 0x89abcdef, 0x01234567, 0x89abcdef,
+          ^~~~~~~~~~
+../src/helloworld.c:49:10: note: (near initialization for 'data')
+../src/helloworld.c:49:22: warning: excess elements in array initializer
+          0x01234567, 0x89abcdef, 0x01234567, 0x89abcdef,
+                      ^~~~~~~~~~
+../src/helloworld.c:49:22: note: (near initialization for 'data')
+../src/helloworld.c:49:34: warning: excess elements in array initializer
+          0x01234567, 0x89abcdef, 0x01234567, 0x89abcdef,
+                                  ^~~~~~~~~~
+../src/helloworld.c:49:34: note: (near initialization for 'data')
+../src/helloworld.c:49:46: warning: excess elements in array initializer
+          0x01234567, 0x89abcdef, 0x01234567, 0x89abcdef,
+                                              ^~~~~~~~~~
+../src/helloworld.c:49:46: note: (near initialization for 'data')
+../src/helloworld.c:50:10: warning: excess elements in array initializer
+          0xfedcba98, 0x76543210, 0xfedcba98, 0x76543210,
+          ^~~~~~~~~~
+../src/helloworld.c:50:10: note: (near initialization for 'data')
+../src/helloworld.c:50:22: warning: excess elements in array initializer
+          0xfedcba98, 0x76543210, 0xfedcba98, 0x76543210,
+                      ^~~~~~~~~~
+../src/helloworld.c:50:22: note: (near initialization for 'data')
+../src/helloworld.c:50:34: warning: excess elements in array initializer
+          0xfedcba98, 0x76543210, 0xfedcba98, 0x76543210,
+                                  ^~~~~~~~~~
+../src/helloworld.c:50:34: note: (near initialization for 'data')
+../src/helloworld.c:50:46: warning: excess elements in array initializer
+          0xfedcba98, 0x76543210, 0xfedcba98, 0x76543210,
+                                              ^~~~~~~~~~
+../src/helloworld.c:50:46: note: (near initialization for 'data')
+../src/helloworld.c:51:10: warning: excess elements in array initializer
+          0xa1b2c3d4, 0xf55f4d3c, 0x3b1a3223, 0x17718998,
+          ^~~~~~~~~~
+../src/helloworld.c:51:10: note: (near initialization for 'data')
+../src/helloworld.c:51:22: warning: excess elements in array initializer
+          0xa1b2c3d4, 0xf55f4d3c, 0x3b1a3223, 0x17718998,
+                      ^~~~~~~~~~
+../src/helloworld.c:51:22: note: (near initialization for 'data')
+../src/helloworld.c:51:34: warning: excess elements in array initializer
+          0xa1b2c3d4, 0xf55f4d3c, 0x3b1a3223, 0x17718998,
+                                  ^~~~~~~~~~
+../src/helloworld.c:51:34: note: (near initialization for 'data')
+../src/helloworld.c:51:46: warning: excess elements in array initializer
+          0xa1b2c3d4, 0xf55f4d3c, 0x3b1a3223, 0x17718998,
+                                              ^~~~~~~~~~
+../src/helloworld.c:51:46: note: (near initialization for 'data')
+../src/helloworld.c:52:10: warning: excess elements in array initializer
+          0x1fa793fe, 0xb3784793, 0x091a6e4d, 0x78acdafa,
+          ^~~~~~~~~~
+../src/helloworld.c:52:10: note: (near initialization for 'data')
+../src/helloworld.c:52:22: warning: excess elements in array initializer
+          0x1fa793fe, 0xb3784793, 0x091a6e4d, 0x78acdafa,
+                      ^~~~~~~~~~
+../src/helloworld.c:52:22: note: (near initialization for 'data')
+../src/helloworld.c:52:34: warning: excess elements in array initializer
+          0x1fa793fe, 0xb3784793, 0x091a6e4d, 0x78acdafa,
+                                  ^~~~~~~~~~
+../src/helloworld.c:52:34: note: (near initialization for 'data')
+../src/helloworld.c:52:46: warning: excess elements in array initializer
+          0x1fa793fe, 0xb3784793, 0x091a6e4d, 0x78acdafa,
+                                              ^~~~~~~~~~
+../src/helloworld.c:52:46: note: (near initialization for 'data')
+../src/helloworld.c:53:10: warning: excess elements in array initializer
+          0x7af1da9c, 0x46739018, 0x3265481d, 0x3ac9bfde,
+          ^~~~~~~~~~
+../src/helloworld.c:53:10: note: (near initialization for 'data')
+../src/helloworld.c:53:22: warning: excess elements in array initializer
+          0x7af1da9c, 0x46739018, 0x3265481d, 0x3ac9bfde,
+                      ^~~~~~~~~~
+../src/helloworld.c:53:22: note: (near initialization for 'data')
+../src/helloworld.c:53:34: warning: excess elements in array initializer
+          0x7af1da9c, 0x46739018, 0x3265481d, 0x3ac9bfde,
+                                  ^~~~~~~~~~
+../src/helloworld.c:53:34: note: (near initialization for 'data')
+../src/helloworld.c:53:46: warning: excess elements in array initializer
+          0x7af1da9c, 0x46739018, 0x3265481d, 0x3ac9bfde,
+                                              ^~~~~~~~~~
+../src/helloworld.c:53:46: note: (near initialization for 'data')
+../src/helloworld.c:54:10: warning: excess elements in array initializer
+          0x87fe567a, 0x8ee04778, 0x328745ea, 0xc7aa9039};
+          ^~~~~~~~~~
+../src/helloworld.c:54:10: note: (near initialization for 'data')
+../src/helloworld.c:54:22: warning: excess elements in array initializer
+          0x87fe567a, 0x8ee04778, 0x328745ea, 0xc7aa9039};
+                      ^~~~~~~~~~
+../src/helloworld.c:54:22: note: (near initialization for 'data')
+../src/helloworld.c:54:34: warning: excess elements in array initializer
+          0x87fe567a, 0x8ee04778, 0x328745ea, 0xc7aa9039};
+                                  ^~~~~~~~~~
+../src/helloworld.c:54:34: note: (near initialization for 'data')
+../src/helloworld.c:54:46: warning: excess elements in array initializer
+          0x87fe567a, 0x8ee04778, 0x328745ea, 0xc7aa9039};
+                                              ^~~~~~~~~~
+../src/helloworld.c:54:46: note: (near initialization for 'data')
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../app_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size app.elf  |tee "app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7704	    836	   3108	  11648	   2d80	app.elf
+'Finished building: app.elf.size'
+' '
+
+00:10:30 Build Finished (took 1m:35s.85ms)
+
