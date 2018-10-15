@@ -542,25 +542,22 @@ int extract_web_page_info(char *rx_buff){
 			gPlaintext[j] = '\0';
 		   j=0;
 		   //xil_printf("CiphertextOutput = %s\r\nPlaintextOutput = %s\r\n", gCiphertext,gPlaintext);
-		   len = strlen(gCiphertext);
-		   xil_printf("gCiphertext len = %d\r\n",len);
-		   if(len > 0){
-			   len = str_to_hex(gCiphertext,hex);
-			   totalWords = build_aes_block(hex,len);
-			   //xil_printf("AES: noOfWords = %d\r\n",totalWords);
-			   loadPlainTextInBram(data,totalWords);
-			   xil_printf("*************** RECEIVED CIPHERTEXT DATA FROM WEBPAGE ***************\n\r");
-			   displayBram(data_readaddr_start,totalWords);
-			   startDecryption(totalWords);
-			   xil_printf("*************** DECRYPTED DATA OF RECEIVED CIPHERTEXT DATA ***************\n\r");
-			   displayBram(data_writeaddr_start + totalWords,totalWords);
-			   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
-			   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
-			   temp_str[totalBytes] = '\0';
-			   xil_printf("*******************************************************************\r\n");
-			   xil_printf("DECRYPTED STRING OF THE CIPHERTEXT: %s\r\n",temp_str);
-			   xil_printf("*******************************************************************\r\n\r\n\r\n");
-		   }
+		   //len = strlen(gCiphertext);
+		   len = str_to_hex(gCiphertext,hex);
+		   totalWords = build_aes_block(hex,len);
+		   //xil_printf("AES: noOfWords = %d\r\n",totalWords);
+		   loadPlainTextInBram(data,totalWords);
+		   xil_printf("*************** RECEIVED CIPHERTEXT DATA FROM WEBPAGE ***************\n\r");
+		   displayBram(data_readaddr_start,totalWords);
+		   startDecryption(totalWords);
+		   xil_printf("*************** DECRYPTED DATA OF RECEIVED CIPHERTEXT DATA ***************\n\r");
+		   displayBram(data_writeaddr_start + totalWords,totalWords);
+		   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
+		   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
+		   temp_str[totalBytes] = '\0';
+		   xil_printf("*******************************************************************\r\n");
+		   xil_printf("DECRYPTED STRING OF THE CIPHERTEXT: %s\r\n",temp_str);
+		   xil_printf("*******************************************************************\r\n");
 
 
 		   totalWords = 0;
@@ -569,25 +566,21 @@ int extract_web_page_info(char *rx_buff){
 		   memset(hex,0,128);
 		   memset(tempBuff,0,128*sizeof(uint32_t));
 		   memset(temp_str,0,130);
-		   len = strlen(gPlaintext);
-		   xil_printf("gPlaintext len = %d\r\n",len);
-		   if(len > 0){
-			   len = str_to_hex(gPlaintext,hex);
-			   totalWords = build_aes_block(hex,len);
-			   //xil_printf("AES: noOfWords = %d\r\n",totalWords);
-			   loadPlainTextInBram(data,totalWords);
-			   xil_printf("*************** RECEIVED PLAINTEXT DATA FROM WEBPAGE ***************\n\r");
-			   displayBram(data_readaddr_start,totalWords);
-			   startEncryption(totalWords);
-			   xil_printf("*************** ENCRYPTED DATA OF RECEOVED PLAINTEXT DATA ***************\n\r");
-			   displayBram(data_writeaddr_start + totalWords,totalWords);
-			   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
-			   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
-			   temp_str[totalBytes] = '\0';
-			   xil_printf("*******************************************************************\r\n");
-			   xil_printf("ENCRYPTED STRING OF PLAINEXT IS: %s\r\n",temp_str);
-			   xil_printf("*******************************************************************\r\n");
-		   }
+		   len = str_to_hex(gPlaintext,hex);
+		   totalWords = build_aes_block(hex,len);
+		   //xil_printf("AES: noOfWords = %d\r\n",totalWords);
+		   loadPlainTextInBram(data,totalWords);
+		   xil_printf("*************** RECEIVED PLAINTEXT DATA FROM WEBPAGE ***************\n\r");
+		   displayBram(data_readaddr_start,totalWords);
+		   startEncryption(totalWords);
+		   xil_printf("*************** ENCRYPTED DATA OF RECEOVED PLAINTEXT DATA ***************\n\r");
+		   displayBram(data_writeaddr_start + totalWords,totalWords);
+		   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
+		   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
+		   temp_str[totalBytes] = '\0';
+		   xil_printf("*******************************************************************\r\n");
+		   xil_printf("ENCRYPTED STRING OF PLAINEXT IS: %s\r\n",temp_str);
+		   xil_printf("*******************************************************************\r\n");
 		   return 2;
     	}
     }

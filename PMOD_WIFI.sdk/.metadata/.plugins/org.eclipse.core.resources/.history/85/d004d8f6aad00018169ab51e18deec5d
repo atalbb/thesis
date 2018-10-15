@@ -130,7 +130,7 @@ int str_to_hex(char *str, uint8_t *hex){
 uint32_t build_aes_block(uint8_t *d, uint32_t len){
 	uint32_t i = 0,j=0,k=0;
 	uint32_t noOfBlocks = len/16;
-	//xil_printf("AES: noOfBlocks = %d\r\n",noOfBlocks);
+	xil_printf("AES: noOfBlocks = %d\r\n",noOfBlocks);
 	//for(i=0;i<noOfBlocks;i++){
 		while(k<(16*noOfBlocks)){
 			data[j++] = (d[k]<<24)|(d[k+1]<<16)|(d[k+2]<<8)|(d[k+3]<<0);
@@ -246,7 +246,7 @@ uint32_t addAesPadding(uint8_t * data, uint32_t len){
 	}else{
 		noOfPaddingBytes = 16 - (len%16);// - (len % 16);
 	}
-	//xil_printf("\r\nnoOfPaddingBytes = %d\r\n",noOfPaddingBytes);
+	xil_printf("\r\nnoOfPaddingBytes = %d\r\n",noOfPaddingBytes);
 	for(i=0;i<noOfPaddingBytes;i++){
 		data[len++] = 0;
 	}
@@ -486,7 +486,7 @@ int extract_web_page_info(char *rx_buff){
 		   gDigitStr[j] = '\0';
 		   j=0;
 			for(i=0;i<16;i++){
-				//xil_printf("LED%d:%s\r\n",i+1,gLedStatusStr[i]);
+				xil_printf("LED%d:%s\r\n",i+1,gLedStatusStr[i]);
 				if(strcmp((char*)gLedStatusStr[i],"On")==0){
 					gLedBitMap |= (1<<i);
 				}else{
@@ -494,7 +494,7 @@ int extract_web_page_info(char *rx_buff){
 				}
 
 			}
-			//xil_printf("Digit = %s\r\n",gDigitStr);
+			xil_printf("Digit = %s\r\n",gDigitStr);
 			if(strcmp(gDigitStr,"0")==0){gSevenSegDigit=0;};
 			if(strcmp(gDigitStr,"1")==0){gSevenSegDigit=1;};
 			if(strcmp(gDigitStr,"2")==0){gSevenSegDigit=2;};
@@ -541,26 +541,23 @@ int extract_web_page_info(char *rx_buff){
 			}
 			gPlaintext[j] = '\0';
 		   j=0;
-		   //xil_printf("CiphertextOutput = %s\r\nPlaintextOutput = %s\r\n", gCiphertext,gPlaintext);
-		   len = strlen(gCiphertext);
-		   xil_printf("gCiphertext len = %d\r\n",len);
-		   if(len > 0){
-			   len = str_to_hex(gCiphertext,hex);
-			   totalWords = build_aes_block(hex,len);
-			   //xil_printf("AES: noOfWords = %d\r\n",totalWords);
-			   loadPlainTextInBram(data,totalWords);
-			   xil_printf("*************** RECEIVED CIPHERTEXT DATA FROM WEBPAGE ***************\n\r");
-			   displayBram(data_readaddr_start,totalWords);
-			   startDecryption(totalWords);
-			   xil_printf("*************** DECRYPTED DATA OF RECEIVED CIPHERTEXT DATA ***************\n\r");
-			   displayBram(data_writeaddr_start + totalWords,totalWords);
-			   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
-			   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
-			   temp_str[totalBytes] = '\0';
-			   xil_printf("*******************************************************************\r\n");
-			   xil_printf("DECRYPTED STRING OF THE CIPHERTEXT: %s\r\n",temp_str);
-			   xil_printf("*******************************************************************\r\n\r\n\r\n");
-		   }
+		   xil_printf("CiphertextOutput = %s\r\nPlaintextOutput = %s\r\n", gCiphertext,gPlaintext);
+		   //len = strlen(gCiphertext);
+		   len = str_to_hex(gCiphertext,hex);
+		   totalWords = build_aes_block(hex,len);
+		   xil_printf("AES: noOfWords = %d\r\n",totalWords);
+		   loadPlainTextInBram(data,totalWords);
+		   xil_printf("***** Received CipherText Data *****\n\r");
+		   displayBram(data_readaddr_start,totalWords);
+		   startDecryption(totalWords);
+		   xil_printf("***** Decrypted Data of Received CipherText Data *****\n\r");
+		   displayBram(data_writeaddr_start + totalWords,totalWords);
+		   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
+		   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
+		   temp_str[totalBytes] = '\0';
+		   xil_printf("*******************************************************************\r\n");
+		   xil_printf("DECRYPTED STRING IS: %s\r\n",temp_str);
+		   xil_printf("*******************************************************************\r\n");
 
 
 		   totalWords = 0;
@@ -569,25 +566,21 @@ int extract_web_page_info(char *rx_buff){
 		   memset(hex,0,128);
 		   memset(tempBuff,0,128*sizeof(uint32_t));
 		   memset(temp_str,0,130);
-		   len = strlen(gPlaintext);
-		   xil_printf("gPlaintext len = %d\r\n",len);
-		   if(len > 0){
-			   len = str_to_hex(gPlaintext,hex);
-			   totalWords = build_aes_block(hex,len);
-			   //xil_printf("AES: noOfWords = %d\r\n",totalWords);
-			   loadPlainTextInBram(data,totalWords);
-			   xil_printf("*************** RECEIVED PLAINTEXT DATA FROM WEBPAGE ***************\n\r");
-			   displayBram(data_readaddr_start,totalWords);
-			   startEncryption(totalWords);
-			   xil_printf("*************** ENCRYPTED DATA OF RECEOVED PLAINTEXT DATA ***************\n\r");
-			   displayBram(data_writeaddr_start + totalWords,totalWords);
-			   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
-			   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
-			   temp_str[totalBytes] = '\0';
-			   xil_printf("*******************************************************************\r\n");
-			   xil_printf("ENCRYPTED STRING OF PLAINEXT IS: %s\r\n",temp_str);
-			   xil_printf("*******************************************************************\r\n");
-		   }
+		   len = str_to_hex(gPlaintext,hex);
+		   totalWords = build_aes_block(hex,len);
+		   xil_printf("AES: noOfWords = %d\r\n",totalWords);
+		   loadPlainTextInBram(data,totalWords);
+		   xil_printf("***** Received PlainText Data *****\n\r");
+		   displayBram(data_readaddr_start,totalWords);
+		   startEncryption(totalWords);
+		   xil_printf("***** Encrypted Data of Received Plaintext Data *****\n\r");
+		   displayBram(data_writeaddr_start + totalWords,totalWords);
+		   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
+		   totalBytes = convert_aes_datablock_to_byte(temp_str,tempBuff,totalWords);
+		   temp_str[totalBytes] = '\0';
+		   xil_printf("*******************************************************************\r\n");
+		   xil_printf("ENCRYPTED STRING IS: %s\r\n",temp_str);
+		   xil_printf("*******************************************************************\r\n");
 		   return 2;
     	}
     }
@@ -902,9 +895,9 @@ void DemoRun()
 		        	cbRead = cbRead < (int) sizeof(rgbRead) ? cbRead : sizeof(rgbRead);
 		            cbRead = ptcpClient->readStream(rgbRead, cbRead);
 
-		            //xil_printf("Got %d bytes\r\n", cbRead);
+		            xil_printf("Got %d bytes\r\n", cbRead);
 		            for(i=0;i<cbRead;i++){
-		            	//xil_printf("%c",rgbRead[i]);
+		            	xil_printf("%c",rgbRead[i]);
 		            }
 		            rgbRead[i] = '\0';
 		            xil_printf("\r\n");
@@ -916,7 +909,7 @@ void DemoRun()
 		            }else if(http_ret == 2){
 
 		            }else if(http_ret == -1){
-		            	//xil_printf("A:404 not found!\r\n");
+		            	xil_printf("A:404 not found!\r\n");
 		            }
 		            state = WRITE;
 		        }
@@ -940,7 +933,7 @@ void DemoRun()
 						ptcpClient->writeStream(http_header, strlen((const char*)http_header));
 						ptcpClient->writeStream(aes_page, strlen((const char*)aes_page));
 		            }else if(http_ret == -1){
-		            	//xil_printf("B:404 not found!\r\n");
+		            	xil_printf("B:404 not found!\r\n");
 		            	ptcpClient->writeStream(http_404_header, strlen((const char*)http_404_header));
 		            }
 		            state = CLOSE;

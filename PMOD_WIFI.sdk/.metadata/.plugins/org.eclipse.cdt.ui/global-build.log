@@ -48837,3 +48837,230 @@ mb-size wifiApp.elf  |tee "wifiApp.elf.size"
 14:42:17 **** Incremental Build of configuration Debug for project wifiApp ****
 make all 
 make: Nothing to be done for `all'.
+14:48:54 **** Auto Build of configuration Debug for project wifiApp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiApp_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:131:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'uint32_t update_webpage()':
+../src/main.cc:677:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:802:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+../src/main.cc: In function 'int extract_web_page_info(char*)':
+../src/main.cc:587:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiApp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiApp_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiApp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiApp.elf  |tee "wifiApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 354332	   4952	  22268	 381552	  5d270	wifiApp.elf
+'Finished building: wifiApp.elf.size'
+' '
+14:49:25 **** Incremental Build of configuration Debug for project wifiApp ****
+make all 
+make: Nothing to be done for `all'.
+14:56:57 **** Auto Build of configuration Debug for project wifiApp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiApp_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:131:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'uint32_t update_webpage()':
+../src/main.cc:677:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:802:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+../src/main.cc: In function 'int extract_web_page_info(char*)':
+../src/main.cc:587:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiApp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiApp_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiApp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiApp.elf  |tee "wifiApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 354380	   4952	  22268	 381600	  5d2a0	wifiApp.elf
+'Finished building: wifiApp.elf.size'
+' '
+14:57:30 **** Incremental Build of configuration Debug for project wifiApp ****
+make all 
+make: Nothing to be done for `all'.
+14:59:43 **** Incremental Build of configuration Debug for project wifiApp ****
+make all 
+make: Nothing to be done for `all'.
+15:03:14 **** Auto Build of configuration Debug for project wifiApp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiApp_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:131:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'uint32_t update_webpage()':
+../src/main.cc:680:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:805:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+../src/main.cc: In function 'int extract_web_page_info(char*)':
+../src/main.cc:590:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiApp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiApp_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiApp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiApp.elf  |tee "wifiApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 354608	   4952	  22272	 381832	  5d388	wifiApp.elf
+'Finished building: wifiApp.elf.size'
+' '
+15:04:19 **** Incremental Build of configuration Debug for project wifiApp ****
+make all 
+make: Nothing to be done for `all'.
+15:07:23 **** Auto Build of configuration Debug for project wifiApp ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiApp_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiApp_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:131:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'uint32_t update_webpage()':
+../src/main.cc:684:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:809:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+../src/main.cc: In function 'int extract_web_page_info(char*)':
+../src/main.cc:594:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiApp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiApp_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiApp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiApp.elf  |tee "wifiApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 354616	   4952	  22272	 381840	  5d390	wifiApp.elf
+'Finished building: wifiApp.elf.size'
+' '
+15:07:44 **** Incremental Build of configuration Debug for project wifiApp ****
+make all 
+make: Nothing to be done for `all'.
