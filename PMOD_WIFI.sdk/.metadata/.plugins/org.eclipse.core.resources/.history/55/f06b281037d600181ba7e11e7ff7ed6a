@@ -77,7 +77,7 @@ u8 ssidBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
 u8 pwdBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
 unsigned int ssidBytesCount = 0;
 unsigned int pwdBytesCount = 0;
-unsigned int ReceivedCount = 0;
+//unsigned int ReceivedCount = 0;
 uint8_t get_authentication_info(){
 	int Status;
 	int Index;
@@ -246,30 +246,30 @@ void startDecryption(uint32_t noOfWords){
 	  }
 }
 void aestest(){
-//	   uint32_t tempBuff[NO_OF_DATA_WORDS];
-    //xil_printf("-- My Algorithm --\r\n");
+	   uint32_t tempBuff[NO_OF_DATA_WORDS];
+    xil_printf("-- My Algorithm --\r\n");
 
-	   //xil_printf("-- Loading Keys --\r\n");
+	   xil_printf("-- Loading Keys --\r\n");
 	   loadExpandedKeysInBram(key,NO_OF_KEY_WORDS);
 	   //xil_printf("***** Keys *****\n\r");  // Printing loaded keys
 	   //displayBram(key_addr_start,NO_OF_KEY_WORDS);
 
-//	   loadPlainTextInBram(data,NO_OF_DATA_WORDS);
-//	   xil_printf("***** Plaintext Data *****\n\r");  // Printing loaded keys
-//	   displayBram(data_readaddr_start,NO_OF_DATA_WORDS);
-//
-//	   startEncryption(NO_OF_DATA_WORDS);
-//	   xil_printf("***** Encrypted Data *****\n\r");  // Printing loaded keys
-//	   displayBram(data_writeaddr_start + NO_OF_DATA_WORDS,NO_OF_DATA_WORDS);
-//
-//	   loadFromBramToBuf(data_writeaddr_start + NO_OF_DATA_WORDS,tempBuff,NO_OF_DATA_WORDS);
-//	   loadPlainTextInBram(tempBuff,NO_OF_DATA_WORDS);
-//	   xil_printf("***** Plaintext Data *****\n\r");  // Printing loaded keys
-//	   displayBram(data_readaddr_start,NO_OF_DATA_WORDS);
-//
-//	   startDecryption(NO_OF_DATA_WORDS);
-//	   xil_printf("***** Decrypted Data *****\n\r");  // Printing loaded keys
-//	   displayBram(data_writeaddr_start + NO_OF_DATA_WORDS,NO_OF_DATA_WORDS);
+	   loadPlainTextInBram(data,NO_OF_DATA_WORDS);
+	   xil_printf("***** Plaintext Data *****\n\r");  // Printing loaded keys
+	   displayBram(data_readaddr_start,NO_OF_DATA_WORDS);
+
+	   startEncryption(NO_OF_DATA_WORDS);
+	   xil_printf("***** Encrypted Data *****\n\r");  // Printing loaded keys
+	   displayBram(data_writeaddr_start + NO_OF_DATA_WORDS,NO_OF_DATA_WORDS);
+
+	   loadFromBramToBuf(data_writeaddr_start + NO_OF_DATA_WORDS,tempBuff,NO_OF_DATA_WORDS);
+	   loadPlainTextInBram(tempBuff,NO_OF_DATA_WORDS);
+	   xil_printf("***** Plaintext Data *****\n\r");  // Printing loaded keys
+	   displayBram(data_readaddr_start,NO_OF_DATA_WORDS);
+
+	   startDecryption(NO_OF_DATA_WORDS);
+	   xil_printf("***** Decrypted Data *****\n\r");  // Printing loaded keys
+	   displayBram(data_writeaddr_start + NO_OF_DATA_WORDS,NO_OF_DATA_WORDS);
 
 }
 uint32_t addAesPadding(uint8_t * data, uint32_t len){
@@ -299,7 +299,7 @@ const char * szIPServer = "192.168.43.52";    // server to connect to
 uint16_t portServer = 80;//DEIPcK::iPersonalPorts44 + 300;     // port 44300
 
 // Specify the SSID
- char  szSsid[32] = "SM-G950U5F0";
+const char * szSsid = "SM-G950U5F0";
 
 // select 1 for the security you want, or none for no security
 #define USE_WPA2_PASSPHRASE
@@ -311,7 +311,7 @@ uint16_t portServer = 80;//DEIPcK::iPersonalPorts44 + 300;     // port 44300
 // modify the security key to what you have.
 #if defined(USE_WPA2_PASSPHRASE)
 
-     char  szPassPhrase[32] = "atal1234";
+    const char * szPassPhrase = "atal1234";
     #define WiFiConnectMacro() deIPcK.wfConnect(szSsid, szPassPhrase, &status)
 
 #elif defined(USE_WPA2_KEY)
@@ -391,42 +391,42 @@ int cbWriteStream = sizeof(rgbWriteStream);
 void DemoInitialize();
 void DemoRun();
 
-//uint8_t uart_init(){
-//	int Status;
-//	int Index;
-//
-//	/*
-//	 * Initialize the UartLite driver so that it is ready to use.
-//	 */
-//	Status = XUartLite_Initialize(&UartLite, 0);
-//	if (Status != XST_SUCCESS) {
-//		return XST_FAILURE;
-//	}
-//	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
-//		RecvBuffer[Index] = 0;
-//	}
-//	while (1) {
-//		ReceivedCount += XUartLite_Recv(&UartLite,
-//					   RecvBuffer + ReceivedCount,
-//					   TEST_BUFFER_SIZE - ReceivedCount);
-//		//outbyte(RecvBuffer[ReceivedCount-1]);
-////		if ((ReceivedCount == TEST_BUFFER_SIZE-2) || (RecvBuffer[ReceivedCount-1] == 0x0a)) {
-////			break;
-////		}
-////		if (ReceivedCount == TEST_BUFFER_SIZE-2) {
-////			RecvBuffer[TEST_BUFFER_SIZE-2] = 0x0d;
-////			RecvBuffer[TEST_BUFFER_SIZE-1] = 0x0a;
-////			break;
-////		}else if(RecvBuffer[ReceivedCount-1] == 0x0a){
-////			break;
-////		}
-//		if(RecvBuffer[ReceivedCount-1] == 0x0d){
-//			ReceivedCount--;
+uint8_t uart_init(){
+	int Status;
+	int Index;
+
+	/*
+	 * Initialize the UartLite driver so that it is ready to use.
+	 */
+	Status = XUartLite_Initialize(&UartLite, 0);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		RecvBuffer[Index] = 0;
+	}
+	while (1) {
+		ReceivedCount += XUartLite_Recv(&UartLite,
+					   RecvBuffer + ReceivedCount,
+					   TEST_BUFFER_SIZE - ReceivedCount);
+		//outbyte(RecvBuffer[ReceivedCount-1]);
+//		if ((ReceivedCount == TEST_BUFFER_SIZE-2) || (RecvBuffer[ReceivedCount-1] == 0x0a)) {
 //			break;
 //		}
-//	}
-//	return XST_SUCCESS;
-//}
+//		if (ReceivedCount == TEST_BUFFER_SIZE-2) {
+//			RecvBuffer[TEST_BUFFER_SIZE-2] = 0x0d;
+//			RecvBuffer[TEST_BUFFER_SIZE-1] = 0x0a;
+//			break;
+//		}else if(RecvBuffer[ReceivedCount-1] == 0x0a){
+//			break;
+//		}
+		if(RecvBuffer[ReceivedCount-1] == 0x0d){
+			ReceivedCount--;
+			break;
+		}
+	}
+	return XST_SUCCESS;
+}
 XGpio dip;
 int dip_check = 0;
 bool gSendDataFlag = false;
@@ -461,22 +461,10 @@ void DemoRun()
 	uint32_t totalWords = 0;
 	uint32_t tempBuff[32] = {0};
 	uint32_t i = 0;
-	bool authFlag = false;
 	while (1){
 		switch(state)
 		    {
 		 case CONNECT:
-	        	if(authFlag == false){
-	        		get_authentication_info();
-	        		strcpy(szSsid,(char*)ssidBuffer);
-	        		strcpy(szPassPhrase,(char*)pwdBuffer);
-	        		memset(ssidBuffer,0,TEST_BUFFER_SIZE);
-	        		memset(pwdBuffer,0,TEST_BUFFER_SIZE);
-	        		ssidBytesCount = 0;
-	        		pwdBytesCount = 0;
-	        		xil_printf("Authenticating Wireless Device to the Network...\r\n");
-	        		authFlag = true;
-	        	}
 		            if(WiFiConnectMacro())
 		            {
 		                LED_IP_mWriteReg(0x44a40000,0,0x00ff);
@@ -489,10 +477,8 @@ void DemoRun()
 		            }
 		            else if(IsIPStatusAnError(status))
 		            {
-		            	xil_printf("\r\nUnable to make connection, status: 0x%X\r\n", status);
-		            	authFlag = false;
-		            	deIPcK.wfDisconnect();
-		            	state = CONNECT;
+		                xil_printf("Unable to connect, status: %d\r\n", status);
+		                state = CLOSE;
 		            }
 		            break;
 

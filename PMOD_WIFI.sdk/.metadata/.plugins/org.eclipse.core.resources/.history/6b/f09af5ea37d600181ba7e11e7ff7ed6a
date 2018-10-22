@@ -489,10 +489,8 @@ void DemoRun()
 		            }
 		            else if(IsIPStatusAnError(status))
 		            {
-		            	xil_printf("\r\nUnable to make connection, status: 0x%X\r\n", status);
-		            	authFlag = false;
-		            	deIPcK.wfDisconnect();
-		            	state = CONNECT;
+		                xil_printf("Unable to connect, status: %d\r\n", status);
+		                state = CLOSE;
 		            }
 		            break;
 

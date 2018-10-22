@@ -299,7 +299,7 @@ const char * szIPServer = "192.168.43.52";    // server to connect to
 uint16_t portServer = 80;//DEIPcK::iPersonalPorts44 + 300;     // port 44300
 
 // Specify the SSID
- char  szSsid[32] = "SM-G950U5F0";
+const char * szSsid = "SM-G950U5F0";
 
 // select 1 for the security you want, or none for no security
 #define USE_WPA2_PASSPHRASE
@@ -311,7 +311,7 @@ uint16_t portServer = 80;//DEIPcK::iPersonalPorts44 + 300;     // port 44300
 // modify the security key to what you have.
 #if defined(USE_WPA2_PASSPHRASE)
 
-     char  szPassPhrase[32] = "atal1234";
+    const char * szPassPhrase = "atal1234";
     #define WiFiConnectMacro() deIPcK.wfConnect(szSsid, szPassPhrase, &status)
 
 #elif defined(USE_WPA2_KEY)
@@ -466,17 +466,6 @@ void DemoRun()
 		switch(state)
 		    {
 		 case CONNECT:
-	        	if(authFlag == false){
-	        		get_authentication_info();
-	        		strcpy(szSsid,(char*)ssidBuffer);
-	        		strcpy(szPassPhrase,(char*)pwdBuffer);
-	        		memset(ssidBuffer,0,TEST_BUFFER_SIZE);
-	        		memset(pwdBuffer,0,TEST_BUFFER_SIZE);
-	        		ssidBytesCount = 0;
-	        		pwdBytesCount = 0;
-	        		xil_printf("Authenticating Wireless Device to the Network...\r\n");
-	        		authFlag = true;
-	        	}
 		            if(WiFiConnectMacro())
 		            {
 		                LED_IP_mWriteReg(0x44a40000,0,0x00ff);
@@ -489,10 +478,8 @@ void DemoRun()
 		            }
 		            else if(IsIPStatusAnError(status))
 		            {
-		            	xil_printf("\r\nUnable to make connection, status: 0x%X\r\n", status);
-		            	authFlag = false;
-		            	deIPcK.wfDisconnect();
-		            	state = CONNECT;
+		                xil_printf("Unable to connect, status: %d\r\n", status);
+		                state = CLOSE;
 		            }
 		            break;
 

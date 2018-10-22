@@ -287,3 +287,10 @@ dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
 // Tcl Message: launch_sdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf 
 // Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
 // HMemoryUtils.trashcanNow. Engine heap size: 1,113 MB. GUI used memory: 54 MB. Current time: 10/22/18 2:58:27 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,113 MB. GUI used memory: 54 MB. Current time: 10/22/18 3:28:28 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,113 MB. GUI used memory: 53 MB. Current time: 10/22/18 3:58:28 PM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,113 MB. GUI used memory: 53 MB. Current time: 10/22/18 4:28:38 PM EDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
