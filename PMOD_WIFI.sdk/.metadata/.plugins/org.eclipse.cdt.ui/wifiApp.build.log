@@ -1,6 +1,36 @@
-12:36:20 **** Incremental Build of configuration Debug for project wifiApp ****
+14:34:05 **** Auto Build of configuration Debug for project wifiApp ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiApp_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:52:
+../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiApp_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiApp_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:52:
+../../wifiApp_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiApp.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiApp_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiApp.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2017.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: wifiApp.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2017.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 323060 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [wifiApp.elf] Error 1
 
-12:36:20 Build Finished (took 207ms)
+14:34:06 Build Finished (took 1s.272ms)
 

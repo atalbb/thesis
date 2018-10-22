@@ -17,3 +17,4 @@ launch_sdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk
 ipx::edit_ip_in_project -upgrade true -name atal_AES_LUT_41clks_v2_0_project -directory C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.tmp/atal_AES_LUT_41clks_v2_0_project c:/Xilinx/Vivado/MyProjects/myIps/ip_repo/atal_AES_LUT_41clks_2.0/component.xml
 update_compile_order -fileset sources_1
 current_project PMOD_WIFI
+launch_sdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf
