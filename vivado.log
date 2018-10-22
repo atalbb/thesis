@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Oct 12 10:25:13 2018
-# Process ID: 3612
+# Start of session at: Thu Oct 18 16:53:57 2018
+# Process ID: 12776
 # Current directory: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6188 C:\Xilinx\Vivado\MyProjects\PMOD_WIFI_CLIENT\PMOD_WIFI.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8936 C:\Xilinx\Vivado\MyProjects\PMOD_WIFI_CLIENT\PMOD_WIFI.xpr
 # Log file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/vivado.log
 # Journal file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT\vivado.jou
 #-----------------------------------------------------------
@@ -34,9 +34,57 @@ WARNING: [IP_Flow 19-3664] IP 'design_1_PmodWIFI_0_0' generated file not found '
 WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found 'c:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/stats.txt'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found 'c:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
-open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 910.816 ; gain = 188.676
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 831.285 ; gain = 85.809
 update_compile_order -fileset sources_1
+open_bd_design {C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- digilentinc.com:IP:PmodWIFI:1.0 - PmodWIFI_0
+Adding cell -- xilinx.com:ip:axi_emc:3.0 - axi_emc_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:user:led_ip:1.0 - led_ip_0
+Adding cell -- xilinx.com:user:sevenSegment:1.0 - sevenSegment_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_DATAbram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - DATA_bram
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_KEYbram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - KEY_bram
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - en_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - we_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - zero
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:user:atal_AES_LUT_41clks:2.0 - atal_AES_LUT_41clks_1
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - switches
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Successfully read diagram <design_1> from BD file <C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 926.113 ; gain = 76.688
 launch_sdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
 INFO: [Vivado 12-417] Running xsdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name atal_AES_LUT_41clks_v2_0_project -directory C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.tmp/atal_AES_LUT_41clks_v2_0_project c:/Xilinx/Vivado/MyProjects/myIps/ip_repo/atal_AES_LUT_41clks_2.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/xilinx/vivado/myprojects/pmod_wifi_client/pmod_wifi.tmp/atal_aes_lut_41clks_v2_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/College/Thesis/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/MyProjects/myIps'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1024.043 ; gain = 65.090
+update_compile_order -fileset sources_1
+current_project PMOD_WIFI

@@ -1,6 +1,6 @@
-15:07:44 **** Incremental Build of configuration Debug for project wifiApp ****
+12:36:20 **** Incremental Build of configuration Debug for project wifiApp ****
 make all 
 make: Nothing to be done for `all'.
 
-15:07:44 Build Finished (took 207ms)
+12:36:20 Build Finished (took 207ms)
 

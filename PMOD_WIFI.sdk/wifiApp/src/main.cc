@@ -55,18 +55,69 @@
 #include "led_ip.h"
 #include "sevenSegment.h"
 #include "atal_AES_LUT_41clks.h"
+#include "xuartlite.h"
+#include "xgpio.h"
 #ifdef __MICROBLAZE__
 #define PMODWIFI_VEC_ID XPAR_INTC_0_PMODWIFI_0_VEC_ID
 #else
 #define PMODWIFI_VEC_ID XPAR_FABRIC_PMODWIFI_0_WF_INTERRUPT_INTR
 #endif
+/************************** UART RELATED DECLARATIONS *****************************/
+#define UARTLITE_DEVICE_ID	XPAR_UARTLITE_0_DEVICE_ID
+#define TEST_BUFFER_SIZE 64
+uint8_t RecvBuffer[128];
+int UartLitePolledExample(u16 DeviceId);
+XUartLite UartLite;		/* Instance of the UartLite Device */
+u8 SendBuffer[TEST_BUFFER_SIZE];	/* Buffer for Transmitting Data */
+u8 ssidBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
+u8 pwdBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
+unsigned int ssidBytesCount = 0;
+unsigned int pwdBytesCount = 0;
+//unsigned int ReceivedCount = 0;
+uint8_t get_authentication_info(){
+	int Status;
+	int Index;
+	Status = XUartLite_Initialize(&UartLite, 0);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		ssidBuffer[Index] = 0;
+	}
+	xil_printf("\r\nEnter SSID and press 'Enter':");
+	while (1) {
+		ssidBytesCount += XUartLite_Recv(&UartLite,
+				ssidBuffer + ssidBytesCount,
+					   TEST_BUFFER_SIZE - ssidBytesCount);
+		if(ssidBuffer[ssidBytesCount-1] == 0x0d){
+			ssidBuffer[ssidBytesCount-1] = '\0';
+			ssidBytesCount--;
+			xil_printf("\r\nSSID(Len = %d):%s\r\n\r\n",strlen((char*)ssidBuffer),ssidBuffer);
+			break;
+		}
+	}
+	xil_printf("\r\nEnter PASSWORD and press 'Enter':");
+	while (1) {
+		pwdBytesCount += XUartLite_Recv(&UartLite,
+				pwdBuffer + pwdBytesCount,
+					   TEST_BUFFER_SIZE - pwdBytesCount);
+		if(pwdBuffer[pwdBytesCount-1] == 0x0d){
+			pwdBuffer[pwdBytesCount-1] = '\0';
+			pwdBytesCount--;
+			xil_printf("\r\nPASSWORD(Len = %d):%s\r\n\r\n",strlen((char*)pwdBuffer),pwdBuffer);
+			break;
+		}
+	}
+	return XST_SUCCESS;
+}
+/************************** END OF UART RELATED DECLARATIONS *****************************/
 
+/****************************************** AES RELATED DECLARATIONS ****************************************************/
 #define NO_OF_KEY_WORDS			120
 #define NO_OF_DATA_WORDS		8
 
 uint32_t *key_addr_start = (uint32_t*)0xC2000000;
 uint32_t *data_readaddr_start = (uint32_t*)0xC0000000;    // datastore
-//uint32_t *data_writeaddr_start = (uint32_t*)(0xC0000004 + 4 * NO_OF_DATA_WORDS);    // datastore
 uint32_t *data_writeaddr_start = (uint32_t*)0xC0000004;    // datastore
 uint32_t key[NO_OF_KEY_WORDS]={0x00010203, 0x04050607, 0x08090a0b, 0x0c0d0e0f,
 							   0x10111213, 0x14151617, 0x18191a1b, 0x1c1d1e1f,
@@ -252,13 +303,12 @@ uint32_t addAesPadding(uint8_t * data, uint32_t len){
 	}
 	return len;
 }
+/****************************************** END OF AES RELATED DECLARATIONS ****************************************************/
 
-/************************************************************************/
-/*                                                                      */
-/*              SET THESE VALUES FOR YOUR NETWORK                       */
-/*                                                                      */
-/************************************************************************/
-const u8 aes_page[]=
+/************************************** WEBPAGE RELATED DECLARATIONS ************************************/
+const u8 http_header[100] = "HTTP/1.1 200 OK\r\nConnection: close\r\n\r\n";
+const u8 http_404_header[100] = "HTTP/1.1 404\r\nConnection: close\r\n\r\n";
+ u8 aes_page[]=
 {"<!DOCTYPE html>"
 		"<html>"
 		"<script>\r\n"
@@ -332,9 +382,6 @@ const u8 aes_page[]=
 		"</body>"
 		"</html>"
 };
-const u8 http_header[100] = "HTTP/1.1 200 OK\r\nConnection: close\r\n\r\n";
-const u8 http_404_header[100] = "HTTP/1.1 404\r\nConnection: close\r\n\r\n";
-
  u8 homepage[] = "<!DOCTYPE html>"
 "<html>"
 "<body bgcolor=\"#0065A4\"><center>"
@@ -405,30 +452,6 @@ const u8 http_404_header[100] = "HTTP/1.1 404\r\nConnection: close\r\n\r\n";
 "</p>"
 "</center> </body>"
 "</html>";
- u8 aes_html_page[2000]={"<html>\r\n"
-		 "<head>\r\n"
-		 "    <script src=\"https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/aes.js\"></script>\r\n"
-		 "    <script src=\"https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/aes-ctr.js\"></script>\r\n"
-		 "    <script>\r\n"
-		 "        'use strict';\r\n"
-		 "        function byteArrayToHexStr(b) { \r\n"
-		 "          var s = '';\r\n"
-		 "          for (var i=0; i<b.length; i++) s += b[i]<0x10 ? '0'+b[i].toString(16)+' ' : b[i].toString(16)+' ';\r\n"
-		 "          return s;\r\n"
-		 "        }\r\n"
-		 "        String.prototype.toCodes = function() {\r\n"
-		 "          if (this.length == 0) return '';\r\n"
-		 "          var arr = this.split('');\r\n"
-		 "          for (a in arr) arr[a] = arr[a].charCodeAt(0);\r\n"
-		 "          return arr.join(':');\r\n"
-		 "        }\r\n"
-		 "    </script>\r\n"
-		 "</head>\r\n"
-		 "<body>\r\n"
-		 "    <button onClick=\"alert(byteArrayToHexStr(Aes.cipher([0x00,0x11,0x22,0x33,0x44,0x55,0x66,0x77,0x88,0x99,0xaa,0xbb,0xcc,0xdd,0xee,0xff], Aes.keyExpansion([0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0a,0x0b,0x0c,0x0d,0x0e,0x0f, 0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17,0x18,0x19,0x1a,0x1b,0x1c,0x1d,0x1e,0x1f]))))\"> 256-bit Test Vector </button><br>\r\n"
-		 "</body>\r\n"
-		 "</html>\r\n"
-};
 char gLedStatusStr[16][5]={"Off","Off","Off","Off","Off","Off","Off","Off","Off","Off","Off","Off","Off","Off","Off","Off"};
 char gDigitStr[2];
 char gPlaintext[128]="";
@@ -456,7 +479,7 @@ int extract_web_page_info(char *rx_buff){
     ret = strstr(rx_buff,"GET /config");
     ret1= strstr(rx_buff,"GET /aes");
     if((ret==0) && (ret1==0)){
-    	xil_printf("GET /config and GET/aes not found!\r\n");
+    	//xil_printf("GET /config and GET/aes not found!\r\n");
     	return -1;
     }else{
     	if(ret != 0){
@@ -543,7 +566,7 @@ int extract_web_page_info(char *rx_buff){
 		   j=0;
 		   //xil_printf("CiphertextOutput = %s\r\nPlaintextOutput = %s\r\n", gCiphertext,gPlaintext);
 		   len = strlen(gCiphertext);
-		   xil_printf("gCiphertext len = %d\r\n",len);
+		   //xil_printf("gCiphertext len = %d\r\n",len);
 		   if(len > 0){
 			   len = str_to_hex(gCiphertext,hex);
 			   totalWords = build_aes_block(hex,len);
@@ -570,7 +593,7 @@ int extract_web_page_info(char *rx_buff){
 		   memset(tempBuff,0,128*sizeof(uint32_t));
 		   memset(temp_str,0,130);
 		   len = strlen(gPlaintext);
-		   xil_printf("gPlaintext len = %d\r\n",len);
+		   //xil_printf("gPlaintext len = %d\r\n",len);
 		   if(len > 0){
 			   len = str_to_hex(gPlaintext,hex);
 			   totalWords = build_aes_block(hex,len);
@@ -592,13 +615,10 @@ int extract_web_page_info(char *rx_buff){
     	}
     }
 }
-uint32_t update_webpage(){
+void update_config_webpage(){
 	char ledOn[16][10];
 	char ledOff[16][10];
 	uint8_t i = 0;
-
-	//if(ledStatus[0]){strcpy(ledOn[0],"checked");strcpy(ledOff[0],"\0");}
-	//if(ledStatus[0]){strcpy(ledOn[0],"checked");strcpy(ledOff[0],"\0");}
 	for(i=0;i<16;i++){
 		if(strcmp(gLedStatusStr[i],"On")==0){
 			strcpy(ledOn[i],"checked");
@@ -682,14 +702,20 @@ uint32_t update_webpage(){
 	ledOn[5],ledOff[5],ledOn[6],ledOff[6],ledOn[7],ledOff[7],ledOn[8],ledOff[8],ledOn[9],ledOff[9],
 	ledOn[10],ledOff[10],ledOn[11],ledOff[11],ledOn[12],ledOff[12],ledOn[13],ledOff[13],ledOn[14],ledOff[14],ledOn[15],ledOff[15],gSevenSegDigit);
 }
+/**************************************END OF WEBPAGE RELATED DECLARATIONS ************************************/
 
+/************************************************************************/
+/*                                                                      */
+/*              SET THESE VALUES FOR YOUR NETWORK                       */
+/*                                                                      */
+/************************************************************************/
 IPv4 ipServer = {0,0,0,0};//{0,0,0,0} for DHCP
-
-unsigned short portServer = 80;//DEIPcK::iPersonalPorts44 + 300;     // port 44300
+unsigned short portServer = 80; //HTTP Port Number
 
 // Specify the SSID
 //const char * szSsid = "Himalayan Panthers";
-const char * szSsid = "SM-G950U5F0";
+//const char * szSsid = "SM-G950U5F0";
+char szSsid[32] = "";
 // select 1 for the security you want, or none for no security
 #define USE_WPA2_PASSPHRASE
 //#define USE_WPA2_KEY
@@ -701,7 +727,8 @@ const char * szSsid = "SM-G950U5F0";
 #if defined(USE_WPA2_PASSPHRASE)
 
     //const char * szPassPhrase = "Aayogorkhali@2016";
-const char * szPassPhrase = "atal1234";
+//const char * szPassPhrase = "atal1234";
+char szPassPhrase[32] = "";
     #define WiFiConnectMacro() deIPcK.wfConnect(szSsid, szPassPhrase, &status)
 
 #elif defined(USE_WPA2_KEY)
@@ -783,13 +810,19 @@ IPSTATUS status;
 void DemoInitialize();
 void DemoRun();
 
-
+XGpio dip;
+int dip_check = 0;
 int main(void)
 {
+
 	Xil_ICacheEnable();
 	Xil_DCacheEnable();
-
-	xil_printf("TCP Echo Server\r\nConnecting...\r\n");
+	XGpio_Initialize(&dip,XPAR_SWITCHES_DEVICE_ID);
+	XGpio_SetDataDirection(&dip,1,0xffffffff);
+	//xil_printf("TCP Echo Server\r\nConnecting...\r\n");
+//	dip_check = XGpio_DiscreteRead(&dip,1);
+	//xil_printf("HTTP Server Program Started:0x%x!\r\n\r\n",dip_check);
+	xil_printf("WPA2-PSK AUTHENTICATION PROGRAM STARTED!\r\n\r\n");
 	aestest();
 	DemoInitialize();
 	DemoRun();
@@ -801,29 +834,45 @@ void DemoInitialize()
 	setPmodWifiAddresses(XPAR_PMODWIFI_0_AXI_LITE_SPI_BASEADDR, XPAR_PMODWIFI_0_AXI_LITE_WFGPIO_BASEADDR, XPAR_PMODWIFI_0_AXI_LITE_WFCS_BASEADDR, XPAR_PMODWIFI_0_S_AXI_TIMER_BASEADDR);
 	setPmodWifiIntVector(PMODWIFI_VEC_ID);
 }
-
-
 void DemoRun()
 {
-	int http_ret = 0;
-	int i = 0;
-//	uint32_t totalWords = 0;
-//	uint32_t tempBuff[32] = {0};
-//	uint32_t totalBytes = 0;
+	 int http_ret = 0;
+	 bool authFlag = false;
+	 uint8_t demo = 0;
+    uint32_t totalWords = 0;
+	uint32_t tempBuff[128] = {0};
+	uint32_t totalBytes = 0;
 	while (1){
+		uint32_t temp_len = 0;
 		switch(state)
 		    {
 		        case CONNECT:
+		        	if(authFlag == false){
+		        		get_authentication_info();
+		        		strcpy(szSsid,(char*)ssidBuffer);
+		        		strcpy(szPassPhrase,(char*)pwdBuffer);
+		        		memset(ssidBuffer,0,TEST_BUFFER_SIZE);
+		        		memset(pwdBuffer,0,TEST_BUFFER_SIZE);
+		        		ssidBytesCount = 0;
+		        		pwdBytesCount = 0;
+		        		xil_printf("Authenticating Wireless Device to the Network...\r\n");
+		        		authFlag = true;
+		        	}
 		            if(WiFiConnectMacro())
 		            {
-		                xil_printf("Connection Created\r\n");
-		                deIPcK.begin(ipServer);
+		                //xil_printf("Connection Created\r\n");
+		          	    xil_printf("\r\nWireless Device Authenticated!\r\n");
+		          	    xil_printf("\r\nWireless Device connected to the Network!\r\n");
+		          	    xil_printf("\r\nHTTP Server Running on the Wireless Device!\r\n");
+		            	deIPcK.begin(ipServer);
 		                state = LISTEN;
 		            }
 		            else if(IsIPStatusAnError(status))
 		            {
-		            	xil_printf("Unable to make connection, status: 0x%X\r\n", status);
-		                state = CLOSE;
+		            	xil_printf("\r\nUnable to make connection, status: 0x%X\r\n", status);
+		            	authFlag = false;
+		            	state = CONNECT;
+		            	//state = CLOSE;
 		            }
 		            break;
 
@@ -903,21 +952,59 @@ void DemoRun()
 		            cbRead = ptcpClient->readStream(rgbRead, cbRead);
 
 		            //xil_printf("Got %d bytes\r\n", cbRead);
-		            for(i=0;i<cbRead;i++){
-		            	//xil_printf("%c",rgbRead[i]);
-		            }
-		            rgbRead[i] = '\0';
+//		            for(i=0;i<cbRead;i++){
+//		            	xil_printf("%c",rgbRead[i]);
+//		            }
+		            //rgbRead[i] = '\0';
 		            xil_printf("\r\n");
-		            http_ret = extract_web_page_info((char*)rgbRead);
-		            if(http_ret == 1){
-						update_webpage();
-						LED_IP_mWriteReg(0x44a40000,0,gLedBitMap);
-						SEVENSEGMENT_mWriteReg(0x44a50000,0,gSevenSegDigit);
-		            }else if(http_ret == 2){
+		        	dip_check = XGpio_DiscreteRead(&dip,1);
+		        	if(dip_check == 0){
+		        		xil_printf("DEMO1\r\n");
+		        		demo = 1;
+			            xil_printf("\r\n**************************************************\r\n");
+			            xil_printf("\r\nNumber of bytes read %d:\r\n", cbRead);
+						xil_printf("\r\nReceived Message:");
+			            for(int i=0; i < cbRead; i++)
+						{
+							if((i%4)==0){
+								xil_printf("\r\n");
+							}
+			            	xil_printf("%02x",rgbRead[i]);
+						}
+						xil_printf("\r\n");
+						totalWords = build_aes_block(rgbRead,cbRead);
+						xil_printf("AES: noOfWords = %d\r\n",totalWords);
+					   loadPlainTextInBram(data,totalWords);
+					   xil_printf("***** Plaintext Data *****\n\r");  // Printing loaded keys
+					   displayBram(data_readaddr_start,totalWords);
+					   startDecryption(totalWords);
+					   xil_printf("***** Decrypted Data *****\n\r");  // Printing loaded keys
+					   displayBram(data_writeaddr_start + totalWords,totalWords);
+					   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
+					   totalBytes = convert_aes_datablock_to_byte(RecvBuffer,tempBuff,totalWords);
+					   xil_printf("***** RECEIVED DATA *****\n\r");
+					   for(i=0;i<totalBytes;i++){
+						   xil_printf("%c",RecvBuffer[i]);
+					   }
+					   RecvBuffer[i] = '\0';
+					   strcat((char*)RecvBuffer,",Dr. Kandalaft, Dr. Parikh, Dr. Trefftz");
+					   totalBytes = strlen((char*)RecvBuffer);
+					   xil_printf("\r\n");
+		        	}else{
+		        		demo = 2;
+		        		xil_printf("DEMO2\r\n");
+						rgbRead[cbRead] = '\0';
+						http_ret = extract_web_page_info((char*)rgbRead);
+						if(http_ret == 1){
+							update_config_webpage();
+							LED_IP_mWriteReg(0x44a40000,0,gLedBitMap);
+							SEVENSEGMENT_mWriteReg(0x44a50000,0,gSevenSegDigit);
+						}else if(http_ret == 2){
 
-		            }else if(http_ret == -1){
-		            	//xil_printf("A:404 not found!\r\n");
-		            }
+						}else if(http_ret == -1){
+							//xil_printf("A:404 not found!\r\n");
+						}
+		        	}
 		            state = WRITE;
 		        }
 
@@ -933,17 +1020,80 @@ void DemoRun()
 		    case WRITE:
 		        if(ptcpClient->isConnected())
 		        {
-		            if(http_ret == 1){
-						ptcpClient->writeStream(http_header, strlen((const char*)http_header));
-						ptcpClient->writeStream(homepage, strlen((const char*)homepage));
-		            }else if(http_ret == 2){
-						ptcpClient->writeStream(http_header, strlen((const char*)http_header));
-						ptcpClient->writeStream(aes_page, strlen((const char*)aes_page));
-		            }else if(http_ret == -1){
-		            	//xil_printf("B:404 not found!\r\n");
-		            	ptcpClient->writeStream(http_404_header, strlen((const char*)http_404_header));
+		        	if(demo == 1){
+		        		xil_printf("Writing Demo1\r\n");
+			        	int i = 0;
+			        	xil_printf("\r\nSent Message:");
+	#if 0
+			        	rgbWrite[0] = '$';
+			        	rgbWrite[1] = '$';
+			        	for(i=0;i<cbRead-2;i++){
+			        		rgbWrite[i+2] = rgbRead[i];
+			        	}
+			        	rgbWrite[i+2] = '$';
+			        	rgbWrite[i+3] = '$';
+						for( i=0; i < (cbRead + 2); i++)
+						{
+							xil_printf("%c",(char) rgbWrite[i]);
+						}
+						xil_printf("\r\n**************************************************\r\n");
+			            ptcpClient->writeStream(rgbWrite,(cbRead + 2));
+	#endif
+		            	totalBytes = addAesPadding(RecvBuffer,totalBytes);
+		            	xil_printf("totalBytes after Padding= %d\r\n",totalBytes);
+		            	totalWords = build_aes_block(RecvBuffer,totalBytes);
+		            	xil_printf("AES: noOfWords = %d\r\n",totalWords);
+
+		         	   loadPlainTextInBram(data,totalWords);
+		         	   xil_printf("***** Plaintext Data *****\n\r");  // Printing loaded keys
+		         	   displayBram(data_readaddr_start,totalWords);
+
+		         	   startEncryption(totalWords);
+		         	   xil_printf("***** Encrypted Data *****\n\r");  // Printing loaded keys
+		         	   displayBram(data_writeaddr_start + totalWords,totalWords);
+
+		        	   loadFromBramToBuf(data_writeaddr_start + totalWords,tempBuff,totalWords);
+		        	   totalBytes = convert_aes_datablock_to_byte(RecvBuffer,tempBuff,totalWords);
+
+		        	   xil_printf("\r\nSent Message:\r\n");
+		        	   for(i=0;i<totalBytes;i++){
+		            		if((i % 4) == 0){
+		            			xil_printf("\r\n");
+		            		}
+		            		xil_printf("%02x",RecvBuffer[i]);
+
+		            	}
+	//	        	    tcpSocket.writeStream(RecvBuffer, totalBytes);
+	//	            	ReceivedCount = 0;
+	//		            for( i=0; i < cbRead ; i++)
+	//					{
+	//						xil_printf("%c",(char) rgbRead[i]);
+	//					}
+						xil_printf("\r\n**************************************************\r\n");
+			            ptcpClient->writeStream(RecvBuffer,totalBytes);
+			            state = READ;
+
+		        	}else if(demo == 2){
+		        		xil_printf("Writing Demo2\r\n");
+						if(http_ret == 1){
+							ptcpClient->writeStream(http_header, strlen((const char*)http_header));
+							ptcpClient->writeStream(homepage, strlen((const char*)homepage));
+							xil_printf("Writing homepage\r\n");
+						}else if(http_ret == 2){
+							ptcpClient->writeStream(http_header, strlen((const char*)http_header));
+							ptcpClient->writeStream(aes_page, strlen((const char*)aes_page));
+							xil_printf("Writing aes_page\r\n");
+						}else if(http_ret == -1){
+							xil_printf("B:404 not found!\r\n");
+							ptcpClient->writeStream(http_404_header, strlen((const char*)http_404_header));
+						}else{
+							xil_printf("unknown http\r\n");
+						}
+						state = CLOSE;
+		            }else{
+		            	xil_printf("Wrong demo number!\r\n");
 		            }
-		            state = CLOSE;
+//		        	state = CLOSE;
 		            tStart = (unsigned) SYSGetMilliSecond();
 		        }
 

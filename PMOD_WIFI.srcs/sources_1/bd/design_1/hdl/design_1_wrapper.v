@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Wed Oct 10 22:55:06 2018
+//Date        : Tue Oct 16 12:45:45 2018
 //Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -31,6 +31,7 @@ module design_1_wrapper
     ja_pin9_io,
     reset,
     segment_out,
+    switches_tri_i,
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
@@ -55,6 +56,7 @@ module design_1_wrapper
   inout ja_pin9_io;
   input reset;
   output [6:0]segment_out;
+  input [15:0]switches_tri_i;
   input sys_clock;
   input usb_uart_rxd;
   output usb_uart_txd;
@@ -167,6 +169,7 @@ module design_1_wrapper
   wire ja_pin9_t;
   wire reset;
   wire [6:0]segment_out;
+  wire [15:0]switches_tri_i;
   wire sys_clock;
   wire usb_uart_rxd;
   wire usb_uart_txd;
@@ -291,6 +294,7 @@ module design_1_wrapper
         .ja_pin9_t(ja_pin9_t),
         .reset(reset),
         .segment_out(segment_out),
+        .switches_tri_i(switches_tri_i),
         .sys_clock(sys_clock),
         .usb_uart_rxd(usb_uart_rxd),
         .usb_uart_txd(usb_uart_txd));

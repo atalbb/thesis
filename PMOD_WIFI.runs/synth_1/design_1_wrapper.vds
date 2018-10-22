@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Oct 10 22:55:26 2018
-# Process ID: 11672
+# Start of session at: Tue Oct 16 12:47:14 2018
+# Process ID: 4932
 # Current directory: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/design_1_wrapper.vds
@@ -31,15 +31,15 @@ WARNING: [IP_Flow 19-3664] IP 'design_1_PmodWIFI_0_0' generated file not found '
 WARNING: [IP_Flow 19-3664] IP 'design_1_axi_bram_ctrl_0_0' generated file not found 'c:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/stats.txt'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found 'c:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 313.043 ; gain = 80.305
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 312.895 ; gain = 80.293
 Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11300 
+INFO: Helper process launched with PID 11704 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 398.633 ; gain = 78.059
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 399.191 ; gain = 77.621
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:17657]
@@ -49,115 +49,125 @@ INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.2/scripts
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:17657]
 INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_bram_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_1' (2#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_bram_1_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_KEYbram_ctrl_0_bram_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_KEYbram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_KEYbram_ctrl_0_bram_0' (3#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_KEYbram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_PmodWIFI_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_PmodWIFI_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_PmodWIFI_0_0' (4#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_PmodWIFI_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_atal_AES_LUT_41clks_1_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_atal_AES_LUT_41clks_1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_atal_AES_LUT_41clks_1_0' (5#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_atal_AES_LUT_41clks_1_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (6#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (7#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_emc_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_emc_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_emc_0_0' (8#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_emc_0_0_stub.v:6]
-WARNING: [Synth 8-689] width (23) of port connection 'mem_a' does not match port width (32) of module 'design_1_axi_emc_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:838]
-WARNING: [Synth 8-350] instance 'axi_emc_0' of module 'design_1_axi_emc_0_0' requires 55 connections, but only 49 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:837]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1557]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1R706YB' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4291]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1R706YB' (9#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4291]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6699]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (10#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6699]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1W60HW0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6971]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1W60HW0' (11#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6971]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (12#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 78 connections, but only 74 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:2370]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (13#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1557]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (14#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1005]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0' (15#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (16#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_led_ip_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_led_ip_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_led_ip_0_0' (17#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_led_ip_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (18#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (19#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (20#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:2447]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4549]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (21#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4549]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4681]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (22#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4681]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4813]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (23#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4813]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4945]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (24#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4945]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5077]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (25#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5077]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5209]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (26#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5209]
-INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5341]
-INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (27#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5341]
-INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1YO2N20' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5487]
-INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1YO2N20' (28#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5487]
-INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_2FYR80' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5633]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (29#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 52 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5848]
-INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_2FYR80' (30#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5633]
-INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_1S9IENL' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5903]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_1' (31#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_1_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 52 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6118]
-INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_1S9IENL' (32#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5903]
-INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_1JMMVIC' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6173]
-INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_1JMMVIC' (33#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6173]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6553]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (34#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6553]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_1' (35#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (36#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:2447]
-INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6319]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (37#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (38#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6465]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (39#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (40#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6511]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (41#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (42#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6319]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (43#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (44#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' requires 10 connections, but only 9 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1515]
-INFO: [Synth 8-638] synthesizing module 'design_1_sevenSegment_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_sevenSegment_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_sevenSegment_0_0' (45#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_sevenSegment_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_1' (46#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_1_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_3' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_3_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_3' (47#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_3_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_2' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_2_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_2' (48#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_2_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (49#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (50#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_bram_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_1' (2#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_bram_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_KEYbram_ctrl_0_bram_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_KEYbram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_KEYbram_ctrl_0_bram_0' (3#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_KEYbram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_PmodWIFI_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_PmodWIFI_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_PmodWIFI_0_0' (4#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_PmodWIFI_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_atal_AES_LUT_41clks_1_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_atal_AES_LUT_41clks_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_atal_AES_LUT_41clks_1_0' (5#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_atal_AES_LUT_41clks_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (6#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (7#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_emc_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_emc_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_emc_0_0' (8#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_emc_0_0_stub.v:6]
+WARNING: [Synth 8-689] width (23) of port connection 'mem_a' does not match port width (32) of module 'design_1_axi_emc_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:859]
+WARNING: [Synth 8-350] instance 'axi_emc_0' of module 'design_1_axi_emc_0_0' requires 55 connections, but only 49 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:858]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1618]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1R706YB' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4484]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1R706YB' (9#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4484]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:7024]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (10#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:7024]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1W60HW0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:7296]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1W60HW0' (11#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:7296]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (12#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 78 connections, but only 74 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:2431]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (13#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1618]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (14#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1026]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0' (15#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (16#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_ip_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_led_ip_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_led_ip_0_0' (17#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_led_ip_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (18#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (19#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (20#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:2508]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4742]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (21#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4742]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4874]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (22#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4874]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5006]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (23#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5006]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5138]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (24#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5138]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5270]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (25#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5270]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5402]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (26#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5402]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5534]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (27#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5534]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1YO2N20' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5680]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1YO2N20' (28#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5680]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_2FYR80' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5826]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (29#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 52 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6041]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_2FYR80' (30#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:5826]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_1S9IENL' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6096]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_1' (31#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 52 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6311]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_1S9IENL' (32#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6096]
+INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_1JMMVIC' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6366]
+INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_1JMMVIC' (33#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6366]
+INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_AVFHLX' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6512]
+INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_AVFHLX' (34#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6512]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6878]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (35#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6878]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_1' (36#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (33) of port connection 'm_axi_arprot' does not match port width (36) of module 'design_1_xbar_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4445]
+WARNING: [Synth 8-689] width (33) of port connection 'm_axi_awprot' does not match port width (36) of module 'design_1_xbar_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:4449]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (37#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:2508]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6644]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (38#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (39#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6790]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (40#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (41#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6836]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (42#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (43#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:6644]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (44#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (45#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' requires 10 connections, but only 9 given [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:1555]
+INFO: [Synth 8-638] synthesizing module 'design_1_sevenSegment_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_sevenSegment_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sevenSegment_0_0' (46#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_sevenSegment_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (47#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_1' (48#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_3' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_3' (49#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_2' [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_2' (50#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/realtime/design_1_xlconstant_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (51#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (52#1) [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m11_couplers_imp_AVFHLX has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m11_couplers_imp_AVFHLX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m11_couplers_imp_AVFHLX has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m11_couplers_imp_AVFHLX has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design m10_couplers_imp_1JMMVIC has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m10_couplers_imp_1JMMVIC has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m10_couplers_imp_1JMMVIC has unconnected port S_ACLK
@@ -250,13 +260,9 @@ WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_AC
 WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ARESETN
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 438.711 ; gain = 118.137
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 440.273 ; gain = 118.703
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -266,7 +272,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 438.711 ; gain = 118.137
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 440.273 ; gain = 118.703
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -275,64 +281,66 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp59/design_1_axi_emc_0_0_in_context.xdc] for cell 'design_1_i/axi_emc_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp59/design_1_axi_emc_0_0_in_context.xdc] for cell 'design_1_i/axi_emc_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp61/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp61/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp63/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp63/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp65/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp65/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp67/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp67/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp69/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp69/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp71/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp71/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp73/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp73/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp75/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp75/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp77/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp77/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp79/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp79/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp81/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp81/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp83/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp83/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp85/design_1_PmodWIFI_0_0_in_context.xdc] for cell 'design_1_i/PmodWIFI_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp85/design_1_PmodWIFI_0_0_in_context.xdc] for cell 'design_1_i/PmodWIFI_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp87/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp87/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp89/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp89/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp91/design_1_led_ip_0_0_in_context.xdc] for cell 'design_1_i/led_ip_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp91/design_1_led_ip_0_0_in_context.xdc] for cell 'design_1_i/led_ip_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp93/design_1_sevenSegment_0_0_in_context.xdc] for cell 'design_1_i/sevenSegment_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp93/design_1_sevenSegment_0_0_in_context.xdc] for cell 'design_1_i/sevenSegment_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp95/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_DATAbram_ctrl_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp95/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_DATAbram_ctrl_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp97/design_1_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'design_1_i/DATA_bram'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp97/design_1_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'design_1_i/DATA_bram'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp99/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_KEYbram_ctrl_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp99/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_KEYbram_ctrl_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp101/design_1_axi_KEYbram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/KEY_bram'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp101/design_1_axi_KEYbram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/KEY_bram'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp103/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/en_1'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp103/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/en_1'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp105/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/we_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp105/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/we_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp107/design_1_xlconstant_0_2_in_context.xdc] for cell 'design_1_i/zero'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp107/design_1_xlconstant_0_2_in_context.xdc] for cell 'design_1_i/zero'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp109/design_1_xlconstant_0_3_in_context.xdc] for cell 'design_1_i/xlconstant_0'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp109/design_1_xlconstant_0_3_in_context.xdc] for cell 'design_1_i/xlconstant_0'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp111/design_1_atal_AES_LUT_41clks_1_0_in_context.xdc] for cell 'design_1_i/atal_AES_LUT_41clks_1'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp111/design_1_atal_AES_LUT_41clks_1_0_in_context.xdc] for cell 'design_1_i/atal_AES_LUT_41clks_1'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp113/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m09_couplers/auto_pc'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp113/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m09_couplers/auto_pc'
-Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp115/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m08_couplers/auto_pc'
-Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp115/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m08_couplers/auto_pc'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp61/design_1_axi_emc_0_0_in_context.xdc] for cell 'design_1_i/axi_emc_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp61/design_1_axi_emc_0_0_in_context.xdc] for cell 'design_1_i/axi_emc_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp63/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp63/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp65/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp65/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp67/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp67/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp69/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp69/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp71/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp71/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp73/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp73/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp75/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp75/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp77/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp77/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp79/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp79/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp81/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp81/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp83/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp83/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp85/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp85/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp87/design_1_PmodWIFI_0_0_in_context.xdc] for cell 'design_1_i/PmodWIFI_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp87/design_1_PmodWIFI_0_0_in_context.xdc] for cell 'design_1_i/PmodWIFI_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp89/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp89/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp91/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp91/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp93/design_1_led_ip_0_0_in_context.xdc] for cell 'design_1_i/led_ip_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp93/design_1_led_ip_0_0_in_context.xdc] for cell 'design_1_i/led_ip_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp95/design_1_sevenSegment_0_0_in_context.xdc] for cell 'design_1_i/sevenSegment_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp95/design_1_sevenSegment_0_0_in_context.xdc] for cell 'design_1_i/sevenSegment_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp97/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_DATAbram_ctrl_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp97/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_DATAbram_ctrl_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp99/design_1_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'design_1_i/DATA_bram'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp99/design_1_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'design_1_i/DATA_bram'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp101/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_KEYbram_ctrl_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp101/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_i/axi_KEYbram_ctrl_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp103/design_1_axi_KEYbram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/KEY_bram'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp103/design_1_axi_KEYbram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/KEY_bram'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp105/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/en_1'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp105/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/en_1'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp107/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/we_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp107/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/we_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp109/design_1_xlconstant_0_2_in_context.xdc] for cell 'design_1_i/zero'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp109/design_1_xlconstant_0_2_in_context.xdc] for cell 'design_1_i/zero'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp111/design_1_xlconstant_0_3_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp111/design_1_xlconstant_0_3_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp113/design_1_atal_AES_LUT_41clks_1_0_in_context.xdc] for cell 'design_1_i/atal_AES_LUT_41clks_1'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp113/design_1_atal_AES_LUT_41clks_1_0_in_context.xdc] for cell 'design_1_i/atal_AES_LUT_41clks_1'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp115/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/switches'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp115/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/switches'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp117/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m09_couplers/auto_pc'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp117/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m09_couplers/auto_pc'
+Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp119/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m08_couplers/auto_pc'
+Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp119/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m08_couplers/auto_pc'
 Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc]
 Finished Parsing XDC File [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -345,25 +353,25 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 24 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 731.406 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 732.965 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/DATA_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/KEY_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp61/design_1_clk_wiz_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-11672-DESKTOP-GJPCRJL/dcp61/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp63/design_1_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/.Xil/Vivado-4932-DESKTOP-GJPCRJL/dcp63/design_1_clk_wiz_0_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/DATA_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/KEY_bram. (constraint file  auto generated constraint, line ).
@@ -393,14 +401,15 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/sevenSegment_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/switches. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/we_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/zero. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -435,7 +444,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -455,13 +464,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/axi_DATAbram_c
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/axi_KEYbram_ctrl_0/bram_clk_a' to pin 'design_1_i/axi_KEYbram_ctrl_0/bbstub_bram_clk_a/O'
 INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -473,7 +482,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -497,7 +506,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -510,7 +519,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,25 +531,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -571,14 +580,15 @@ Report BlackBoxes:
 |19    |design_1_microblaze_0_xlconcat_0   |         1|
 |20    |design_1_rst_clk_wiz_0_100M_0      |         1|
 |21    |design_1_sevenSegment_0_0          |         1|
-|22    |design_1_xlconstant_0_1            |         1|
-|23    |design_1_xlconstant_0_3            |         1|
-|24    |design_1_xlconstant_0_2            |         1|
-|25    |design_1_dlmb_bram_if_cntlr_0      |         1|
-|26    |design_1_dlmb_v10_0                |         1|
-|27    |design_1_ilmb_bram_if_cntlr_0      |         1|
-|28    |design_1_ilmb_v10_0                |         1|
-|29    |design_1_lmb_bram_0                |         1|
+|22    |design_1_axi_gpio_0_0              |         1|
+|23    |design_1_xlconstant_0_1            |         1|
+|24    |design_1_xlconstant_0_3            |         1|
+|25    |design_1_xlconstant_0_2            |         1|
+|26    |design_1_dlmb_bram_if_cntlr_0      |         1|
+|27    |design_1_dlmb_v10_0                |         1|
+|28    |design_1_ilmb_bram_if_cntlr_0      |         1|
+|29    |design_1_ilmb_v10_0                |         1|
+|30    |design_1_lmb_bram_0                |         1|
 +------+-----------------------------------+----------+
 
 Report Cell Usage: 
@@ -594,51 +604,52 @@ Report Cell Usage:
 |7     |design_1_axi_bram_ctrl_0_1         |     1|
 |8     |design_1_axi_bram_ctrl_0_bram_1    |     1|
 |9     |design_1_axi_emc_0_0               |     1|
-|10    |design_1_axi_uartlite_0_0          |     1|
-|11    |design_1_clk_wiz_0_0               |     1|
-|12    |design_1_dlmb_bram_if_cntlr_0      |     1|
-|13    |design_1_dlmb_v10_0                |     1|
-|14    |design_1_ilmb_bram_if_cntlr_0      |     1|
-|15    |design_1_ilmb_v10_0                |     1|
-|16    |design_1_led_ip_0_0                |     1|
-|17    |design_1_lmb_bram_0                |     1|
-|18    |design_1_mdm_1_0                   |     1|
-|19    |design_1_microblaze_0_0            |     1|
-|20    |design_1_microblaze_0_axi_intc_0   |     1|
-|21    |design_1_microblaze_0_xlconcat_0   |     1|
-|22    |design_1_rst_clk_wiz_0_100M_0      |     1|
-|23    |design_1_sevenSegment_0_0          |     1|
-|24    |design_1_xbar_0                    |     1|
-|25    |design_1_xbar_1                    |     1|
-|26    |design_1_xlconstant_0_0            |     1|
-|27    |design_1_xlconstant_0_1            |     1|
-|28    |design_1_xlconstant_0_2            |     1|
-|29    |design_1_xlconstant_0_3            |     1|
-|30    |IBUF                               |     3|
-|31    |IOBUF                              |    24|
-|32    |OBUF                               |    62|
+|10    |design_1_axi_gpio_0_0              |     1|
+|11    |design_1_axi_uartlite_0_0          |     1|
+|12    |design_1_clk_wiz_0_0               |     1|
+|13    |design_1_dlmb_bram_if_cntlr_0      |     1|
+|14    |design_1_dlmb_v10_0                |     1|
+|15    |design_1_ilmb_bram_if_cntlr_0      |     1|
+|16    |design_1_ilmb_v10_0                |     1|
+|17    |design_1_led_ip_0_0                |     1|
+|18    |design_1_lmb_bram_0                |     1|
+|19    |design_1_mdm_1_0                   |     1|
+|20    |design_1_microblaze_0_0            |     1|
+|21    |design_1_microblaze_0_axi_intc_0   |     1|
+|22    |design_1_microblaze_0_xlconcat_0   |     1|
+|23    |design_1_rst_clk_wiz_0_100M_0      |     1|
+|24    |design_1_sevenSegment_0_0          |     1|
+|25    |design_1_xbar_0                    |     1|
+|26    |design_1_xbar_1                    |     1|
+|27    |design_1_xlconstant_0_0            |     1|
+|28    |design_1_xlconstant_0_1            |     1|
+|29    |design_1_xlconstant_0_2            |     1|
+|30    |design_1_xlconstant_0_3            |     1|
+|31    |IBUF                               |    19|
+|32    |IOBUF                              |    24|
+|33    |OBUF                               |    62|
 +------+-----------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  4020|
-|2     |  design_1_i                  |design_1                              |  3931|
+|1     |top                           |                                      |  4188|
+|2     |  design_1_i                  |design_1                              |  4083|
 |3     |    axi_mem_intercon          |design_1_axi_mem_intercon_0           |   254|
-|4     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |  1596|
+|4     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |  1707|
 |5     |      m08_couplers            |m08_couplers_imp_2FYR80               |   167|
 |6     |      m09_couplers            |m09_couplers_imp_1S9IENL              |   167|
 |7     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   494|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 731.406 ; gain = 410.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 732.965 ; gain = 411.395
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 731.406 ; gain = 118.137
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 731.406 ; gain = 410.832
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 732.965 ; gain = 118.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 732.965 ; gain = 411.395
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -646,9 +657,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 24 instances
 
-126 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+130 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:58 . Memory (MB): peak = 731.406 ; gain = 418.363
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 732.965 ; gain = 420.070
 INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/design_1_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 731.406 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 10 22:56:38 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 732.965 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 16 12:48:12 2018...

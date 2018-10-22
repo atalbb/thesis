@@ -2,14 +2,18 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Oct 12 10:25:13 2018
-# Process ID: 3612
+# Start of session at: Thu Oct 18 16:53:57 2018
+# Process ID: 12776
 # Current directory: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6188 C:\Xilinx\Vivado\MyProjects\PMOD_WIFI_CLIENT\PMOD_WIFI.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8936 C:\Xilinx\Vivado\MyProjects\PMOD_WIFI_CLIENT\PMOD_WIFI.xpr
 # Log file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/vivado.log
 # Journal file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.xpr
 update_compile_order -fileset sources_1
+open_bd_design {C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd}
 launch_sdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf
+ipx::edit_ip_in_project -upgrade true -name atal_AES_LUT_41clks_v2_0_project -directory C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.tmp/atal_AES_LUT_41clks_v2_0_project c:/Xilinx/Vivado/MyProjects/myIps/ip_repo/atal_AES_LUT_41clks_2.0/component.xml
+update_compile_order -fileset sources_1
+current_project PMOD_WIFI

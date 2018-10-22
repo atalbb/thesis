@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Oct 12 10:25:13 2018
+# Process ID: 3612
+# Current directory: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6188 C:\Xilinx\Vivado\MyProjects\PMOD_WIFI_CLIENT\PMOD_WIFI.xpr
+# Log file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/vivado.log
+# Journal file: C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk -hwspec C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.sdk/design_1_wrapper.hdf
