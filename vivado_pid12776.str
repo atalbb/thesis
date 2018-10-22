@@ -243,3 +243,6 @@ dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 769 MB. GUI used memory: 69 MB. Current time: 10/22/18 2:55:54 PM EDT
 // HMemoryUtils.trashcanNow. Engine heap size: 769 MB. GUI used memory: 69 MB. Current time: 10/22/18 3:25:54 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 769 MB. GUI used memory: 68 MB. Current time: 10/22/18 3:55:55 PM EDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 769 MB. GUI used memory: 67 MB. Current time: 10/22/18 4:25:55 PM EDT

@@ -57849,3 +57849,131 @@ mb-size serverCode.elf  |tee "serverCode.elf.size"
 15:35:35 **** Incremental Build of configuration Debug for project serverCode ****
 make all 
 make: Nothing to be done for `all'.
+15:46:38 **** Auto Build of configuration Debug for project serverCode ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../serverCode_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../serverCode_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../serverCode_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../serverCode_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:182:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:984:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(i=0;i<totalBytes;i++){
+                 ~^~~~~~~~~~~
+../src/main.cc:1057:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+               for(i=0;i<totalBytes;i++){
+                       ~^~~~~~~~~~~
+../src/main.cc:843:12: warning: unused variable 'temp_len' [-Wunused-variable]
+   uint32_t temp_len = 0;
+            ^~~~~~~~
+../src/main.cc: In function 'int extract_web_page_info(char*)':
+../src/main.cc:617:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: serverCode.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../serverCode_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "serverCode.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: serverCode.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size serverCode.elf  |tee "serverCode.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 356968	   7516	  22692	 387176	  5e868	serverCode.elf
+'Finished building: serverCode.elf.size'
+' '
+15:47:21 **** Incremental Build of configuration Debug for project serverCode ****
+make all 
+make: Nothing to be done for `all'.
+15:53:20 **** Auto Build of configuration Debug for project serverCode ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../serverCode_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../serverCode_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../serverCode_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../serverCode_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../serverCode_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:182:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:984:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(i=0;i<totalBytes;i++){
+                 ~^~~~~~~~~~~
+../src/main.cc:1057:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+               for(i=0;i<totalBytes;i++){
+                       ~^~~~~~~~~~~
+../src/main.cc:843:12: warning: unused variable 'temp_len' [-Wunused-variable]
+   uint32_t temp_len = 0;
+            ^~~~~~~~
+../src/main.cc: In function 'int extract_web_page_info(char*)':
+../src/main.cc:617:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: serverCode.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../serverCode_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "serverCode.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: serverCode.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size serverCode.elf  |tee "serverCode.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 356968	   7520	  22696	 387184	  5e870	serverCode.elf
+'Finished building: serverCode.elf.size'
+' '
+16:00:58 **** Incremental Build of configuration Debug for project serverCode ****
+make all 
+make: Nothing to be done for `all'.
+16:21:07 **** Incremental Build of configuration Debug for project serverCode ****
+make all 
+make: Nothing to be done for `all'.
+16:35:18 **** Incremental Build of configuration Debug for project serverCode ****
+make all 
+make: Nothing to be done for `all'.
+16:40:05 **** Incremental Build of configuration Debug for project serverCode ****
+make all 
+make: Nothing to be done for `all'.
+16:43:53 **** Incremental Build of configuration Debug for project serverCode ****
+make all 
+make: Nothing to be done for `all'.
