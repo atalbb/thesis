@@ -51,22 +51,22 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.cache/wt [current_project]
-  set_property parent.project_path C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.xpr [current_project]
+  set_property webtalk.parent_dir C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.cache/wt [current_project]
+  set_property parent.project_path C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.xpr [current_project]
   set_property ip_repo_paths {
   C:/Xilinx/Vivado/MyProjects/myIps
   C:/Xilinx/Vivado/vivado-library-master
 } [current_project]
-  set_property ip_output_repo C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.cache/ip [current_project]
+  set_property ip_output_repo C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -suppress
   set_param project.isImplRun true
-  add_files C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd
-  set_property is_locked true [get_files C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd]
+  add_files C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd
+  set_property is_locked true [get_files C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/sources_1/bd/design_1/design_1.bd]
   set_param project.isImplRun false
-  read_xdc C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc
+  read_xdc C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7a100tcsg324-1
   set_param project.isImplRun false

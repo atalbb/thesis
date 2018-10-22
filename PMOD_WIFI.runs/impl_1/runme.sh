@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.runs/impl_1'
+HD_PWD='C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

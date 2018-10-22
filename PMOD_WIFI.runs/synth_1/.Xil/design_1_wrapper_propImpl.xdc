@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_SERVER/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc rfile:../../../PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/MyProjects/PMOD_WIFI_CLIENT/PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc rfile:../../../PMOD_WIFI.srcs/constrs_1/imports/LED/nexys4.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T8   IOSTANDARD LVCMOS33 } [get_ports { LED[0] }];
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]

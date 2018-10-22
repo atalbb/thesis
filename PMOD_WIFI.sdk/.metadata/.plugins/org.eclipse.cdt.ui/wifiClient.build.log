@@ -1,0 +1,6 @@
+15:14:07 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+
+15:14:08 Build Finished (took 299ms)
+

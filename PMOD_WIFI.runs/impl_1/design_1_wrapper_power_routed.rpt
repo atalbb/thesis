@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Thu Oct 11 01:03:30 2018
+| Date             : Mon Oct 22 13:01:31 2018
 | Host             : LAPTOP-0POL8OH8 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.465 |
-| Dynamic (W)              | 0.366 |
+| Total On-Chip Power (W)  | 0.464 |
+| Dynamic (W)              | 0.364 |
 | Device Static (W)        | 0.100 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 82.9  |
@@ -50,20 +50,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.089 |        7 |       --- |             --- |
-| Slice Logic              |     0.011 |    53079 |       --- |             --- |
-|   LUT as Logic           |     0.009 |    27281 |     63400 |           43.03 |
+| Slice Logic              |     0.011 |    53314 |       --- |             --- |
+|   LUT as Logic           |     0.009 |    27360 |     63400 |           43.15 |
 |   LUT as Distributed RAM |     0.001 |      144 |     19000 |            0.76 |
-|   Register               |    <0.001 |    14480 |    126800 |           11.42 |
+|   Register               |    <0.001 |    14646 |    126800 |           11.55 |
 |   CARRY4                 |    <0.001 |      131 |     15850 |            0.83 |
-|   F7/F8 Muxes            |    <0.001 |     7453 |     63400 |           11.76 |
+|   F7/F8 Muxes            |    <0.001 |     7416 |     63400 |           11.70 |
 |   LUT as Shift Register  |    <0.001 |      378 |     19000 |            1.99 |
-|   Others                 |    <0.001 |      859 |       --- |             --- |
-| Signals                  |     0.047 |    31864 |       --- |             --- |
+|   Others                 |    <0.001 |      868 |       --- |             --- |
+| Signals                  |     0.045 |    32110 |       --- |             --- |
 | Block RAM                |     0.061 |       30 |       135 |           22.22 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
-| I/O                      |     0.052 |       88 |       210 |           41.90 |
+| I/O                      |     0.052 |      104 |       210 |           49.52 |
 | Static Power             |     0.100 |          |           |                 |
-| Total                    |     0.465 |          |           |                 |
+| Total                    |     0.464 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.222 |       0.206 |      0.017 |
+| Vccint    |       1.000 |     0.221 |       0.204 |      0.017 |
 | Vccaux    |       1.800 |     0.079 |       0.060 |      0.018 |
 | Vcco33    |       3.300 |     0.018 |       0.014 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -146,7 +146,7 @@ Table of Contents
 +--------------------------------------------------------------------------------------+-----------+
 | Name                                                                                 | Power (W) |
 +--------------------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                                     |     0.366 |
+| design_1_wrapper                                                                     |     0.364 |
 |   cellular_ram_dq_iobuf_0                                                            |    <0.001 |
 |   cellular_ram_dq_iobuf_1                                                            |    <0.001 |
 |   cellular_ram_dq_iobuf_10                                                           |    <0.001 |
@@ -163,12 +163,12 @@ Table of Contents
 |   cellular_ram_dq_iobuf_7                                                            |    <0.001 |
 |   cellular_ram_dq_iobuf_8                                                            |    <0.001 |
 |   cellular_ram_dq_iobuf_9                                                            |    <0.001 |
-|   design_1_i                                                                         |     0.314 |
-|     DATA_bram                                                                        |     0.013 |
-|       U0                                                                             |     0.013 |
-|         inst_blk_mem_gen                                                             |     0.013 |
-|           gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                      |     0.013 |
-|             valid.cstr                                                               |     0.013 |
+|   design_1_i                                                                         |     0.312 |
+|     DATA_bram                                                                        |     0.012 |
+|       U0                                                                             |     0.012 |
+|         inst_blk_mem_gen                                                             |     0.012 |
+|           gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                      |     0.012 |
+|             valid.cstr                                                               |     0.012 |
 |               ramloop[0].ram.r                                                       |     0.006 |
 |                 prim_noinit.ram                                                      |     0.006 |
 |               ramloop[1].ram.r                                                       |     0.006 |
@@ -294,22 +294,22 @@ Table of Contents
 |             AXI4_LITE_I                                                              |    <0.001 |
 |               I_SLAVE_ATTACHMENT                                                     |    <0.001 |
 |                 I_DECODER                                                            |    <0.001 |
-|                   MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I      |    <0.001 |
-|                   MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I      |    <0.001 |
-|                   MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I      |    <0.001 |
+|                   MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I      |     0.000 |
+|                   MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I      |     0.000 |
+|                   MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I      |     0.000 |
 |             TC_CORE_I                                                                |     0.003 |
-|               COUNTER_0_I                                                            |     0.001 |
+|               COUNTER_0_I                                                            |     0.002 |
 |                 COUNTER_I                                                            |     0.001 |
 |               GEN_SECOND_TIMER.COUNTER_1_I                                           |     0.002 |
 |                 COUNTER_I                                                            |     0.001 |
-|               READ_MUX_I                                                             |    <0.001 |
+|               READ_MUX_I                                                             |     0.000 |
 |               TIMER_CONTROL_I                                                        |    <0.001 |
 |                 INPUT_DOUBLE_REGS3                                                   |    <0.001 |
 |         pmod_bridge_0                                                                |     0.000 |
 |           inst                                                                       |     0.000 |
-|     atal_AES_LUT_41clks_1                                                            |     0.061 |
-|       inst                                                                           |     0.061 |
-|         atal_AES_LUT_41clks_v2_0_S_AXI_inst                                          |     0.061 |
+|     atal_AES_LUT_41clks_1                                                            |     0.060 |
+|       inst                                                                           |     0.060 |
+|         atal_AES_LUT_41clks_v2_0_S_AXI_inst                                          |     0.060 |
 |           AES0                                                                       |     0.060 |
 |             DB0                                                                      |     0.007 |
 |             DC0                                                                      |    <0.001 |
@@ -684,7 +684,7 @@ Table of Contents
 |         MicroBlaze_Core_I                                                            |     0.071 |
 |           Performance.Core                                                           |     0.071 |
 |             Data_Flow_I                                                              |     0.008 |
-|               ALU_I                                                                  |     0.002 |
+|               ALU_I                                                                  |     0.001 |
 |                 Using_FPGA.ALL_Bits[0].ALU_Bit_I1                                    |    <0.001 |
 |                   Last_Bit.I_ALU_LUT_2                                               |    <0.001 |
 |                   Last_Bit.I_ALU_LUT_V5                                              |    <0.001 |
@@ -1730,6 +1730,13 @@ Table of Contents
 |           T1                                                                         |    <0.001 |
 |             C1                                                                       |    <0.001 |
 |             T1                                                                       |    <0.001 |
+|     switches                                                                         |     0.001 |
+|       U0                                                                             |     0.001 |
+|         AXI_LITE_IPIF_I                                                              |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                         |    <0.001 |
+|             I_DECODER                                                                |    <0.001 |
+|         gpio_core_1                                                                  |    <0.001 |
+|           Not_Dual.INPUT_DOUBLE_REGS3                                                |    <0.001 |
 |     we_0                                                                             |     0.000 |
 |     xlconstant_0                                                                     |     0.000 |
 |     zero                                                                             |     0.000 |

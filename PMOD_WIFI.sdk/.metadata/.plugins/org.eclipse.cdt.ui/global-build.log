@@ -34598,3 +34598,1736 @@ make: Nothing to be done for `all'.
 14:20:24 **** Incremental Build of configuration Debug for project wifiServer ****
 make all 
 make: Nothing to be done for `all'.
+18:24:12 **** Auto Build of configuration Debug for project wifiServer ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiServer_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:53:22: fatal error: PmodWIFI.h: No such file or directory
+ #include "PmodWIFI.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+18:26:29 **** Build of project wifiClient_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/atal_AES_LUT_41clks_v1_0/src"
+make -C microblaze_0/libsrc/atal_AES_LUT_41clks_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_6/src"
+make -C microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/led_ip_v1_0/src"
+make -C microblaze_0/libsrc/led_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodWIFI_v1_0/src"
+make -C microblaze_0/libsrc/PmodWIFI_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/sevenSegment_v1_0/src"
+make -C microblaze_0/libsrc/sevenSegment_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/atal_AES_LUT_41clks_v1_0/src"
+make -C microblaze_0/libsrc/atal_AES_LUT_41clks_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling atal_AES_LUT_41clks..."
+atal_AES_LUT_41clks_selftest.c: In function 'ATAL_AES_LUT_41CLKS_Reg_SelfTest':
+atal_AES_LUT_41clks_selftest.c:52:68: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ATAL_AES_LUT_41CLKS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                    ^~
+atal_AES_LUT_41clks_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_6/src"
+make -C microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/led_ip_v1_0/src"
+make -C microblaze_0/libsrc/led_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling led_ip..."
+led_ip_selftest.c: In function 'LED_IP_Reg_SelfTest':
+led_ip_selftest.c:52:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( LED_IP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                       ^~
+led_ip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/PmodWIFI_v1_0/src"
+make -C microblaze_0/libsrc/PmodWIFI_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodWIFI..."
+In file included from ./DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ./DEIPcK/utility/fpga/System.h:64,
+                 from ./DEIPcK/utility/System.h:54,
+                 from ./DEIPcK/utility/deIP.h:59,
+                 from ../../../include/DEIPcK.h:64,
+                 from DEIPcK/DEIPcK.cpp:54:
+./DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ./DEIPcK/utility/fpga/System.h:62:0,
+                 from ./DEIPcK/utility/System.h:54,
+                 from ./DEIPcK/utility/deIP.h:59,
+                 from ../../../include/DEIPcK.h:64,
+                 from DEIPcK/DEIPcK.cpp:54:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/TCPServer.cpp:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/TCPServer.cpp:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/TCPSocket.cpp:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/TCPSocket.cpp:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/UDPServer.cpp:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/UDPServer.cpp:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/UDPSocket.cpp:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/DEIPcK.h:64,
+                 from DEIPcK/UDPSocket.cpp:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/DHCP.c:52:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/DHCP.c:52:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/DNS.c:53:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/DNS.c:53:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/HeapMgr.c:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/HeapMgr.c:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/ICMP.c:57:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/ICMP.c:57:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/InternetLayer.c:53:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/InternetLayer.c:53:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/IPStack.c:54:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/IPStack.c:54:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+DEIPcK/utility/IPStack.c:58:30: warning: missing braces around initializer [-Wmissing-braces]
+ const IPv4 IPv4BROADCAST  = {{0xFF, 0xFF, 0xFF, 0xFF}};
+                              ^
+DEIPcK/utility/IPStack.c:58:30: note: (near initialization for 'IPv4BROADCAST.<anonymous>')
+DEIPcK/utility/IPStack.c:58:29: warning: missing braces around initializer [-Wmissing-braces]
+ const IPv4 IPv4BROADCAST  = {{0xFF, 0xFF, 0xFF, 0xFF}};
+                             ^
+DEIPcK/utility/IPStack.c:58:29: note: (near initialization for 'IPv4BROADCAST')
+DEIPcK/utility/IPStack.c:59:30: warning: missing braces around initializer [-Wmissing-braces]
+ const IPv4 IPv4NONE       = {{0x00, 0x00, 0x00, 0x00}};    // RFC xxx
+                              ^
+DEIPcK/utility/IPStack.c:59:30: note: (near initialization for 'IPv4NONE.<anonymous>')
+DEIPcK/utility/IPStack.c:59:29: warning: missing braces around initializer [-Wmissing-braces]
+ const IPv4 IPv4NONE       = {{0x00, 0x00, 0x00, 0x00}};    // RFC xxx
+                             ^
+DEIPcK/utility/IPStack.c:59:29: note: (near initialization for 'IPv4NONE')
+DEIPcK/utility/IPStack.c:60:30: warning: missing braces around initializer [-Wmissing-braces]
+ const IPv6 IPv6NONE       = {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}};    // RFC xxx
+                              ^
+DEIPcK/utility/IPStack.c:60:30: note: (near initialization for 'IPv6NONE.<anonymous>')
+DEIPcK/utility/IPStack.c:60:29: warning: missing braces around initializer [-Wmissing-braces]
+ const IPv6 IPv6NONE       = {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}};    // RFC xxx
+                             ^
+DEIPcK/utility/IPStack.c:60:29: note: (near initialization for 'IPv6NONE')
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/LinkLayer.c:53:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/LinkLayer.c:53:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+DEIPcK/utility/LinkLayer.c:57:33: warning: missing braces around initializer [-Wmissing-braces]
+ const MACADDR MACBROADCAST   = {{0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}};    // RFC 894
+                                 ^
+DEIPcK/utility/LinkLayer.c:57:33: note: (near initialization for 'MACBROADCAST.<anonymous>')
+DEIPcK/utility/LinkLayer.c:57:32: warning: missing braces around initializer [-Wmissing-braces]
+ const MACADDR MACBROADCAST   = {{0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}};    // RFC 894
+                                ^
+DEIPcK/utility/LinkLayer.c:57:32: note: (near initialization for 'MACBROADCAST')
+DEIPcK/utility/LinkLayer.c:58:33: warning: missing braces around initializer [-Wmissing-braces]
+ const MACADDR MACNONE        = {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00}};    // RFC 894
+                                 ^
+DEIPcK/utility/LinkLayer.c:58:33: note: (near initialization for 'MACNONE.<anonymous>')
+DEIPcK/utility/LinkLayer.c:58:32: warning: missing braces around initializer [-Wmissing-braces]
+ const MACADDR MACNONE        = {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00}};    // RFC 894
+                                ^
+DEIPcK/utility/LinkLayer.c:58:32: note: (near initialization for 'MACNONE')
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/SNTPv4.c:53:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/SNTPv4.c:53:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from ./DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ./DEIPcK/utility/fpga/System.h:64,
+                 from ./DEIPcK/utility/System.h:54,
+                 from ./DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/fpga/System.c:53,
+                 from DEIPcK/utility/System.c:54:
+./DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ./DEIPcK/utility/fpga/System.h:62:0,
+                 from ./DEIPcK/utility/System.h:54,
+                 from ./DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/fpga/System.c:53,
+                 from DEIPcK/utility/System.c:54:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/TCP.c:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/TCP.c:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/TCPRFC793.c:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/TCPRFC793.c:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/TCPStateMachine.c:51:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/TCPStateMachine.c:51:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from DEIPcK/utility/fpga/System.h:64,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/UDP.c:52:
+DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from DEIPcK/utility/fpga/System.h:62:0,
+                 from DEIPcK/utility/System.h:54,
+                 from DEIPcK/utility/deIP.h:59,
+                 from DEIPcK/utility/UDP.c:52:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from ./DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ./DEIPcK/utility/fpga/System.h:64,
+                 from ./DEIPcK/utility/System.h:54,
+                 from ./DEIPcK/utility/deIP.h:59,
+                 from ../../../include/DEIPcK.h:64,
+                 from DEWFck/DEWFcK.cpp:56:
+./DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ./DEIPcK/utility/fpga/System.h:62:0,
+                 from ./DEIPcK/utility/System.h:54,
+                 from ./DEIPcK/utility/deIP.h:59,
+                 from ../../../include/DEIPcK.h:64,
+                 from DEWFck/DEWFcK.cpp:56:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/../DEIPcK/utility/System.h:54,
+                 from MRF24G/../DEIPcK/utility/deIP.h:59,
+                 from MRF24G/MRF24GAdaptor.h:61,
+                 from MRF24G/MRF24GAdaptor.c:52:
+MRF24G/../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/../DEIPcK/utility/System.h:54,
+                 from MRF24G/../DEIPcK/utility/deIP.h:59,
+                 from MRF24G/MRF24GAdaptor.h:61,
+                 from MRF24G/MRF24GAdaptor.c:52:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+MRF24G/MRF24GAdaptor.c:434:10: warning: missing braces around initializer [-Wmissing-braces]
+         {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00}},
+          ^
+MRF24G/MRF24GAdaptor.c:434:10: note: (near initialization for 'wfmrf24.adpMRF24G.mac.<anonymous>')
+MRF24G/MRF24GAdaptor.c:434:9: warning: missing braces around initializer [-Wmissing-braces]
+         {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00}},
+         ^
+MRF24G/MRF24GAdaptor.c:434:9: note: (near initialization for 'wfmrf24.adpMRF24G.mac')
+MRF24G/MRF24GAdaptor.c:428:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+MRF24G/MRF24GAdaptor.c:428:5: note: (near initialization for 'wfmrf24.adpMRF24G')
+MRF24G/MRF24GAdaptor.c:446:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+MRF24G/MRF24GAdaptor.c:446:5: note: (near initialization for 'wfmrf24.wfMRF24G')
+MRF24G/MRF24GAdaptor.c:454:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+MRF24G/MRF24GAdaptor.c:454:5: note: (near initialization for 'wfmrf24.funcMRF24G')
+MRF24G/MRF24GAdaptor.c:509:9: warning: missing braces around initializer [-Wmissing-braces]
+         {NULL, NULL},
+         ^
+MRF24G/MRF24GAdaptor.c:509:9: note: (near initialization for 'wfmrf24.priv.ffptRead')
+MRF24G/MRF24GAdaptor.c:510:9: warning: missing braces around initializer [-Wmissing-braces]
+         {NULL, NULL},
+         ^
+MRF24G/MRF24GAdaptor.c:510:9: note: (near initialization for 'wfmrf24.priv.ffptWrite')
+MRF24G/MRF24GAdaptor.c:508:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+MRF24G/MRF24GAdaptor.c:508:5: note: (near initialization for 'wfmrf24.priv')
+MRF24G/MRF24GAdaptor.c:427:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+MRF24G/MRF24GAdaptor.c:427:1: note: (near initialization for 'wfmrf24')
+In file included from ../../../include/MRF24G/../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../../include/MRF24G/../DEIPcK/utility/fpga/System.h:64,
+                 from ../../../include/MRF24G/../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/DEMRF24G.cpp:54,
+                 from MRF24G/DEMRF24G.cpp:55:
+../../../include/MRF24G/../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../../include/MRF24G/../DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../../include/MRF24G/../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/DEMRF24G.cpp:54,
+                 from MRF24G/DEMRF24G.cpp:55:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_eint_stub.c:47,
+                 from MRF24G/utility/wf_eint_stub.c:45:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ././xgpio_l.h:87:0,
+                 from ././xgpio.h:125,
+                 from MRF24G/utility/fpga/wf_eint_stub.c:46,
+                 from MRF24G/utility/wf_eint_stub.c:45:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/deIP.h:59,
+                 from MRF24G/utility/fpga/../../MRF24GAdaptor.h:61,
+                 from MRF24G/utility/fpga/wf_event_stub.c:33,
+                 from MRF24G/utility/wf_event_stub.c:34:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/deIP.h:59,
+                 from MRF24G/utility/fpga/../../MRF24GAdaptor.h:61,
+                 from MRF24G/utility/fpga/wf_event_stub.c:33,
+                 from MRF24G/utility/wf_event_stub.c:34:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_gpio_stub.c:45,
+                 from MRF24G/utility/wf_gpio_stub.c:47:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_gpio_stub.c:45,
+                 from MRF24G/utility/wf_gpio_stub.c:47:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_spi_stub.c:47,
+                 from MRF24G/utility/wf_spi_stub.c:47:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_spi_stub.c:47,
+                 from MRF24G/utility/wf_spi_stub.c:47:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_timer_stub.c:46,
+                 from MRF24G/utility/wf_timer_stub.c:46:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_timer_stub.c:46,
+                 from MRF24G/utility/wf_timer_stub.c:46:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_eint_stub.c:47:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ././xgpio_l.h:87:0,
+                 from ././xgpio.h:125,
+                 from MRF24G/utility/fpga/wf_eint_stub.c:46:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/deIP.h:59,
+                 from MRF24G/utility/fpga/../../MRF24GAdaptor.h:61,
+                 from MRF24G/utility/fpga/wf_event_stub.c:33:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/deIP.h:59,
+                 from MRF24G/utility/fpga/../../MRF24GAdaptor.h:61,
+                 from MRF24G/utility/fpga/wf_event_stub.c:33:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_gpio_stub.c:45:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_gpio_stub.c:45:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_spi_stub.c:47:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_spi_stub.c:47:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:64,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_timer_stub.c:46:
+MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from MRF24G/utility/fpga/../../../DEIPcK/utility/fpga/System.h:62:0,
+                 from MRF24G/utility/fpga/../../../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/wf_timer_stub.c:46:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+In file included from ../../../include/MRF24G/../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../../include/MRF24G/../DEIPcK/utility/fpga/System.h:64,
+                 from ../../../include/MRF24G/../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/DEMRF24G.cpp:54:
+../../../include/MRF24G/../DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../../include/MRF24G/../DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../../include/MRF24G/../DEIPcK/utility/System.h:54,
+                 from MRF24G/utility/fpga/DEMRF24G.cpp:54:
+../../../include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+"Running Make libs in microblaze_0/libsrc/sevenSegment_v1_0/src"
+make -C microblaze_0/libsrc/sevenSegment_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling sevenSegment..."
+sevenSegment_selftest.c: In function 'SEVENSEGMENT_Reg_SelfTest':
+sevenSegment_selftest.c:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( SEVENSEGMENT_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                             ^~
+sevenSegment_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+18:26:57 **** Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2392	    308	   3108	   5808	   16b0	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+18:26:59 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+18:27:09 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 344348	   2504	  20228	 367080	  599e8	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+18:28:02 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+18:28:45 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 344348	   2504	  20228	 367080	  599e8	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+18:29:53 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+18:34:42 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+18:39:23 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+18:53:47 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+18:57:16 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 344240	   2504	  20232	 366976	  59980	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+18:58:58 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+19:04:29 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 344688	   2520	  20248	 367456	  59b60	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:06:13 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 344980	   2520	  20244	 367744	  59c80	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:08:11 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345028	   2520	  20244	 367792	  59cb0	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:09:35 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345028	   2520	  20244	 367792	  59cb0	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:11:18 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345000	   2520	  20248	 367768	  59c98	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:12:09 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345024	   2520	  20248	 367792	  59cb0	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:13:25 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+19:16:01 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345108	   2520	  20244	 367872	  59d00	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:16:32 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+19:18:01 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345108	   2520	  20244	 367872	  59d00	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:18:04 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345108	   2520	  20244	 367872	  59d00	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:18:41 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+19:21:04 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345192	   2520	  20248	 367960	  59d58	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:21:38 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345188	   2520	  20244	 367952	  59d50	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:22:06 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+19:23:57 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345144	   2520	  20248	 367912	  59d28	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+19:25:14 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:10:47 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:11:37 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345144	   2520	  20248	 367912	  59d28	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:12:16 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:17:26 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 345028	   2520	  20244	 367792	  59cb0	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:19:05 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:20:32 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:24:40 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:502:65: error: invalid conversion from 'u8* {aka unsigned char*}' to 'char*' [-fpermissive]
+                strcpy(RecvBuffer,"Welcome to the Thesis Defense");
+                                                                 ^
+In file included from c:\xilinx\sdk\2017.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:10:0,
+                 from ../src/main.cc:52:
+c:\xilinx\sdk\2017.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:30:8: note:   initializing argument 1 of 'char* strcpy(char*, const char*)'
+ char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
+        ^
+../src/main.cc:503:49: error: invalid conversion from 'u8* {aka unsigned char*}' to 'const char*' [-fpermissive]
+                ReceivedCount = strlen(RecvBuffer);
+                                                 ^
+In file included from c:\xilinx\sdk\2017.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:10:0,
+                 from ../src/main.cc:52:
+c:\xilinx\sdk\2017.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:33:9: note:   initializing argument 1 of 'size_t strlen(const char*)'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+make: *** [src/main.o] Error 1
+12:24:57 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 343760	   2504	  20176	 366440	  59768	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:26:59 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:29:49 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+../src/main.cc: In function 'void DemoRun()':
+../src/main.cc:608:1: error: expected '}' at end of input
+ }
+ ^
+make: *** [src/main.o] Error 1
+12:30:09 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 343760	   2504	  20176	 366440	  59768	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:30:18 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 343764	   2504	  20172	 366440	  59768	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:31:56 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+12:34:57 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 343800	   2504	  20176	 366480	  59790	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:35:20 **** Auto Build of configuration Debug for project wifiClient ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../wifiClient_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:44:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:50:0: warning: "INLINE" redefined
+ #define INLINE
+ 
+In file included from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/fpga/System.h:62:0,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/System.h:54,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/utility/deIP.h:59,
+                 from ../../wifiClient_bsp/microblaze_0/include/DEIPcK/DEIPcK.h:64,
+                 from ../../wifiClient_bsp/microblaze_0/include/PmodWIFI.h:2,
+                 from ../src/main.cc:53:
+../../wifiClient_bsp/microblaze_0/include/xil_io.h:99:0: note: this is the location of the previous definition
+ #define INLINE inline
+ 
+../src/main.cc: In function 'uint32_t build_aes_block(uint8_t*, uint32_t)':
+../src/main.cc:117:11: warning: unused variable 'i' [-Wunused-variable]
+  uint32_t i = 0,j=0,k=0;
+           ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: wifiClient.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../wifiClient_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "wifiClient.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: wifiClient.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size wifiClient.elf  |tee "wifiClient.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 343832	   2504	  20176	 366512	  597b0	wifiClient.elf
+'Finished building: wifiClient.elf.size'
+' '
+12:36:50 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+14:41:40 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+14:44:23 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+14:48:20 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+14:53:44 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+14:59:05 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+15:03:05 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+15:05:48 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
+15:14:07 **** Incremental Build of configuration Debug for project wifiClient ****
+make all 
+make: Nothing to be done for `all'.
